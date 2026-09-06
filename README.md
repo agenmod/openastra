@@ -20,6 +20,10 @@
 - [评测](#astra-review)
 - [社区](#community)
 - [提示词](#prompts)
+  - [游戏](#prompts-game)
+  - [场景](#prompts-place)
+  - [店面](#prompts-shop)
+  - [工具台](#prompts-tool)
 
 ## 官方
 <a id="official"></a>
@@ -161,44 +165,67 @@
 ## 提示词
 <a id="prompts"></a>
 
-作者自己公布的制作步骤，按时间一步步做出来的。
+作者自己公布的制作步骤。按你想做的东西找。
+
+### 游戏
+<a id="prompts-game"></a>
+
+能开一把的。
 
 - [Void Explorer](https://void-explorer.openai.chatgpt.site/) · 8 步 · [出处](https://developers.openai.com/showcase/void-explorer)
 - [Sunwake](https://sunwake-the-last-light.openai.chatgpt.site/) · 7 步 · [出处](https://developers.openai.com/showcase/sunwake)
 - [Hollowflux](https://tideglass-drowned-vein.openai.chatgpt.site/) · 18 步 · [出处](https://developers.openai.com/showcase/hollowflux)
 - [Velocity Loop](https://velocity-loop.openai.chatgpt.site/) · 13 步 · [出处](https://developers.openai.com/showcase/velocity-loop)
 - [Little Ritual](https://little-ritual.openai.chatgpt.site/) · 8 步 · [出处](https://developers.openai.com/showcase/little-ritual)
+- [Asterism](https://asterism.openai.chatgpt.site/) · 10 步 · [出处](https://developers.openai.com/showcase/asterism)
+- [Backroom Center: Corrupted](https://backroom-center-corrupted.openai.chatgpt.site/) · 7 步 · [出处](https://developers.openai.com/showcase/backroom-center-corrupted)
+- [Codex Pet Arena](https://codex-pet-arena-20260709.openai.chatgpt.site/) · 10 步 · [出处](https://developers.openai.com/showcase/codex-pet-arena)
+- [Cubecade](https://cubecade.openai.chatgpt.site/) · 4 步 · [出处](https://developers.openai.com/showcase/cubecade-rubiks)
+- [Glass Towers](https://glass-towers.openai.chatgpt.site/) · 7 步 · [出处](https://developers.openai.com/showcase/glass-towers)
+- [Paper Glider](https://paper-glider-56.openai.chatgpt.site/) · 4 步 · [出处](https://developers.openai.com/showcase/paper-glider)
+- [Tiny Rails Rollercoaster](https://sol-on-rails.openai.chatgpt.site/) · 11 步 · [出处](https://developers.openai.com/showcase/tiny-rails-rollercoaster)
+- [MiniTown](https://minitown-cozy-sim.openai.chatgpt.site/) · 7 步 · [出处](https://developers.openai.com/showcase/minitown)
+- [Phantasy Codex Adventure](https://phantasy-codex-adventure.openai.chatgpt.site/) · 7 步 · [出处](https://developers.openai.com/showcase/phantasy-codex-adventure)
+
+### 场景
+<a id="prompts-place"></a>
+
+走进去看、转一圈的。
+
 - [Physics Museum](https://astra-museum-of-motion.openai.chatgpt.site/) · 6 步 · [出处](https://developers.openai.com/showcase/physics-museum)
 - [Living Cell](https://living-cell-astra-20260901.openai.chatgpt.site/) · 2 步 · [出处](https://developers.openai.com/showcase/living-cell-cross-section)
 - [Clockwork Observatory](https://kinetic-architecture-astra-20260901.openai.chatgpt.site/) · 2 步 · [出处](https://developers.openai.com/showcase/impossible-kinetic-architecture)
 - [Abyssal](https://abyssal-ecosystem-astra-20260901.openai.chatgpt.site/) · 2 步 · [出处](https://developers.openai.com/showcase/abyssal-bioluminescent-ecosystem)
-- [Architecture Studio](https://architecture-studio.openai.chatgpt.site/) · 6 步 · [出处](https://developers.openai.com/showcase/architecture-studio)
-- [Asterism](https://asterism.openai.chatgpt.site/) · 10 步 · [出处](https://developers.openai.com/showcase/asterism)
-- [Backroom Center: Corrupted](https://backroom-center-corrupted.openai.chatgpt.site/) · 7 步 · [出处](https://developers.openai.com/showcase/backroom-center-corrupted)
 - [Below the Surface](https://below-the-surface-ocean.openai.chatgpt.site/) · 3 步 · [出处](https://developers.openai.com/showcase/below-the-surface)
+- [Courtyard House](https://alder-courtyard-house.openai.chatgpt.site/) · 2 步 · [出处](https://developers.openai.com/showcase/courtyard-house)
+- [Nightjar Listening Room](https://nightjar-listening-room.openai.chatgpt.site/) · 2 步 · [出处](https://developers.openai.com/showcase/nightjar-listening-room)
+- [Tidal House](https://tidal-house-retreat.openai.chatgpt.site/) · 5 步 · [出处](https://developers.openai.com/showcase/tidal-house)
+- [Type Field](https://type-field-exhibition.openai.chatgpt.site/) · 1 步 · [出处](https://developers.openai.com/showcase/type-field)
+
+### 店面
+<a id="prompts-shop"></a>
+
+货架、商品、店里能上手的东西。
+
+- [Field Day](https://store-fronts-56.openai.chatgpt.site/field-day/) · 5 步 · [出处](https://developers.openai.com/showcase/field-day)
+- [Kiln](https://store-fronts-56.openai.chatgpt.site/kiln/) · 6 步 · [出处](https://developers.openai.com/showcase/kiln)
+- [Verdant Market](https://verdant-market-grocery.openai.chatgpt.site/) · 7 步 · [出处](https://developers.openai.com/showcase/verdant-market)
+- [Ridge Pack](https://ridge-pack.openai.chatgpt.site/) · 2 步 · [出处](https://developers.openai.com/showcase/ridge-pack)
+- [Scent Cartography](https://store-fronts-56.openai.chatgpt.site/scent-cartography/) · 6 步 · [出处](https://developers.openai.com/showcase/scent-cartography)
+
+### 工具台
+<a id="prompts-tool"></a>
+
+建模、材质、动画、波形，坐下来调的。
+
+- [Architecture Studio](https://architecture-studio.openai.chatgpt.site/) · 6 步 · [出处](https://developers.openai.com/showcase/architecture-studio)
 - [Biome Lab](https://interactive-studies-56.openai.chatgpt.site/biome-lab/) · 6 步 · [出处](https://developers.openai.com/showcase/biome-lab)
 - [Codex Modeling Studio](https://codex-modeling-studio.openai.chatgpt.site/) · 5 步 · [出处](https://developers.openai.com/showcase/codex-modeling-studio)
-- [Codex Pet Arena](https://codex-pet-arena-20260709.openai.chatgpt.site/) · 10 步 · [出处](https://developers.openai.com/showcase/codex-pet-arena)
-- [Courtyard House](https://alder-courtyard-house.openai.chatgpt.site/) · 2 步 · [出处](https://developers.openai.com/showcase/courtyard-house)
-- [Cubecade](https://cubecade.openai.chatgpt.site/) · 4 步 · [出处](https://developers.openai.com/showcase/cubecade-rubiks)
-- [Field Day](https://store-fronts-56.openai.chatgpt.site/field-day/) · 5 步 · [出处](https://developers.openai.com/showcase/field-day)
 - [Frame Studio](https://frame-studio-motion.openai.chatgpt.site/) · 1 步 · [出处](https://developers.openai.com/showcase/frame-studio)
-- [Glass Towers](https://glass-towers.openai.chatgpt.site/) · 7 步 · [出处](https://developers.openai.com/showcase/glass-towers)
-- [Kiln](https://store-fronts-56.openai.chatgpt.site/kiln/) · 6 步 · [出处](https://developers.openai.com/showcase/kiln)
 - [Material Lab](https://interactive-studies-56.openai.chatgpt.site/material-lab/) · 6 步 · [出处](https://developers.openai.com/showcase/material-lab)
-- [Nightjar Listening Room](https://nightjar-listening-room.openai.chatgpt.site/) · 2 步 · [出处](https://developers.openai.com/showcase/nightjar-listening-room)
-- [Paper Glider](https://paper-glider-56.openai.chatgpt.site/) · 4 步 · [出处](https://developers.openai.com/showcase/paper-glider)
 - [Pattern Studio](https://pattern-studio.openai.chatgpt.site/) · 5 步 · [出处](https://developers.openai.com/showcase/pattern-studio)
 - [Stop-Motion Desk](https://stop-motion-desk.openai.chatgpt.site/) · 5 步 · [出处](https://developers.openai.com/showcase/stop-motion-desk)
 - [Terrain Mixer](https://interactive-studies-56.openai.chatgpt.site/terrain-mixer/) · 5 步 · [出处](https://developers.openai.com/showcase/terrain-mixer)
-- [Tidal House](https://tidal-house-retreat.openai.chatgpt.site/) · 5 步 · [出处](https://developers.openai.com/showcase/tidal-house)
-- [Tiny Rails Rollercoaster](https://sol-on-rails.openai.chatgpt.site/) · 11 步 · [出处](https://developers.openai.com/showcase/tiny-rails-rollercoaster)
-- [Type Field](https://type-field-exhibition.openai.chatgpt.site/) · 1 步 · [出处](https://developers.openai.com/showcase/type-field)
-- [Verdant Market](https://verdant-market-grocery.openai.chatgpt.site/) · 7 步 · [出处](https://developers.openai.com/showcase/verdant-market)
-- [MiniTown](https://minitown-cozy-sim.openai.chatgpt.site/) · 7 步 · [出处](https://developers.openai.com/showcase/minitown)
-- [Phantasy Codex Adventure](https://phantasy-codex-adventure.openai.chatgpt.site/) · 7 步 · [出处](https://developers.openai.com/showcase/phantasy-codex-adventure)
-- [Ridge Pack](https://ridge-pack.openai.chatgpt.site/) · 2 步 · [出处](https://developers.openai.com/showcase/ridge-pack)
-- [Scent Cartography](https://store-fronts-56.openai.chatgpt.site/scent-cartography/) · 6 步 · [出处](https://developers.openai.com/showcase/scent-cartography)
 - [Paperie](https://paperie-webmcp-greeting-cards.openai.chatgpt.site/) · 6 步 · [出处](https://developers.openai.com/showcase/paperie)
 - [Waveform Studio](https://interactive-studies-56.openai.chatgpt.site/waveform-studio/) · 5 步 · [出处](https://developers.openai.com/showcase/waveform-studio)
 
