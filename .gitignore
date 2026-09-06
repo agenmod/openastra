@@ -1,52 +1,19 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# 公开仓只收目录：README、提示词、游戏条目、封面。
+# 站点源码留在本地，不要 push。
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
-
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-
-# env files (can opt-in for committing if needed)
-.env*
-!.env.example
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
-
-/src/generated/prisma
-/prisma/dev.db
-/prisma/dev.db-journal
-/prisma/dev.db-wal
-/prisma/dev.db-shm
-
-/public/covers/*
-!/public/covers/.gitkeep
-!/public/covers/_fallback.svg
+/*
+!/.gitignore
+!/README.md
+!/LICENSE
+!/docs/
+!/docs/readme/
+!/docs/readme/covers.jpg
+!/public/
+!/public/astra/
+!/public/astra/**
+!/src/
+!/src/lib/
+/src/lib/*
+!/src/lib/astra-feed.ts
+!/src/lib/astra-feed-extra.ts
+!/src/lib/astra-prompts.json

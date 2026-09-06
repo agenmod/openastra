@@ -21,7 +21,7 @@ export const ASTRA_SOURCE_LABEL: Record<AstraSource, string> = {
   official: "官方",
   "astra-review": "评测",
   community: "社区",
-  workshop: "本站",
+  workshop: "加的",
 };
 
 export const ASTRA_FEED: AstraWork[] = [
