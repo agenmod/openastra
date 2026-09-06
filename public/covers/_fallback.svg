@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b1030"/>
+      <stop offset=".55" stop-color="#7c5cff"/>
+      <stop offset="1" stop-color="#ff4d9a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="800" fill="url(#g)"/>
+  <circle cx="220" cy="180" r="160" fill="#fff" opacity=".08"/>
+  <circle cx="1080" cy="640" r="220" fill="#fff" opacity=".06"/>
+  <text x="80" y="430" fill="#f4f1ff" font-size="64" font-family="system-ui,sans-serif" font-weight="700">openAstra</text>
+  <text x="80" y="490" fill="#f4f1ff" opacity=".7" font-size="28" font-family="system-ui,sans-serif">,ŸÂJ</text>
+</svg>

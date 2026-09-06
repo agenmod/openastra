@@ -1,0 +1,1533 @@
+{
+  "void-explorer": {
+    "sourceUrl": "https://developers.openai.com/showcase/void-explorer",
+    "steps": [
+      {
+        "title": "Generate the game concepts",
+        "prompts": [
+          "Generate concept art for a fully explorable procedural universe where every star and planet I can see is somewhere I can go. I should be able to accelerate toward them, fly from space into a planet's atmosphere, and see the ground below. Use simpler retro 3D with retro-futurist neon colors, strong contrast, and an evocative sense of deep space. Find a middle ground between too realistic and too simplistic. Show orbital flight, atmospheric descent, and high-speed flight with stars and dust rushing around the ship."
+        ]
+      },
+      {
+        "title": "Build the first vertical slice",
+        "prompts": [
+          "Build the first playable vertical slice of this procedural universe using the attached concept art as visual references. Assemble a basic procedural ship and connect flight, boost, travel between systems, waypoints, distance readouts, and continuous descent toward planetary terrain. Playtest the complete journey."
+        ]
+      },
+      {
+        "title": "Make flight and navigation feel right",
+        "prompts": [
+          "Improve the flight feel and make travel between planets faster. Make navigation visual with star charts and direct targeting, while keeping destinations and distances consistent."
+        ]
+      },
+      {
+        "title": "Upgrade the rendering",
+        "prompts": [
+          "Upgrade the rendering to WebGPU with WebGL support. Preserve the procedural world and simulation, then improve lighting, planetary materials, bloom, and the transition from orbit to the surface."
+        ]
+      },
+      {
+        "title": "Refine the spacecraft concept",
+        "prompts": [
+          "Generate concept images to refine AURORA, the exploration spacecraft for Void Explorer. Explore its silhouette and generate several views of the same design. Keep the ivory and indigo hull, emerald canopy, twin cyan engines, and four separate angular wings with pink tip lights. Refine the concepts until the shape is clear enough to model in 3D."
+        ]
+      },
+      {
+        "title": "Build and integrate AURORA",
+        "prompts": [
+          "Build AURORA in Blender using the attached ship concepts. Treat the approved top view as the authority for the silhouette and proportions, with the front view as supporting reference. Preserve the four separate wings and open gaps, mirror the geometry, and integrate the finished spacecraft into Void Explorer."
+        ]
+      },
+      {
+        "title": "Make exploration physical",
+        "prompts": [
+          "Let me land on the generated terrain, deploy the landing gear, leave through the ramp, walk around the ship, and reboard. Keep takeoff and the return to flight continuous."
+        ]
+      },
+      {
+        "title": "Keep the world coherent",
+        "prompts": [
+          "Playtest the complete journey from orbit to the surface and back. Keep terrain loading smooth and resilient, and check that rivers, water depth, and atmosphere behave consistently throughout flight and exploration."
+        ]
+      }
+    ]
+  },
+  "sunwake": {
+    "sourceUrl": "https://developers.openai.com/showcase/sunwake",
+    "steps": [
+      {
+        "title": "Generate the game concepts",
+        "prompts": [
+          "Generate a few concept images for a 3D boating game in different styles and game states. Show high seas and large waves at sunrise, with sunlight reflected on the water, sparkling blue spray, and droplets on the camera. The water can look retro and triangular, but movement and physics should feel extremely smooth. Aim for procedural geometry without imported sprites or models."
+        ]
+      },
+      {
+        "title": "Build the first sailing slice",
+        "prompts": [
+          "Build a playable first slice from the attached First Light Voyage and Glass Between Storms concepts. Match those images as closely as possible, including the gameplay."
+        ]
+      },
+      {
+        "title": "Refine the sailing feel",
+        "prompts": [
+          "Keep the triangular water style. Make buoyancy smooth and connect waves, displacement, wakes, ripples, and spray so the boat feels naturally connected to the sea."
+        ]
+      },
+      {
+        "title": "Explore two water treatments",
+        "prompts": [
+          "Add a Natural water treatment while keeping Illustrated as the default. Let me compare the two without discarding the faceted style."
+        ]
+      },
+      {
+        "title": "Give the voyage structure and light",
+        "prompts": [
+          "Give the voyage islands and lighthouse objectives, then refine the weather, clouds, and lighting. Preserve the faceted water and add a five-minute celestial cycle with stars and aurora, while keeping the sailing behavior intact."
+        ]
+      },
+      {
+        "title": "Give the boat the same care",
+        "prompts": [
+          "Create a detailed Blender vessel, refine its silhouette and construction, and integrate it into the game. Animate the rigging and support both Illustrated and Natural materials."
+        ]
+      },
+      {
+        "title": "Settle the boat naturally into the water",
+        "prompts": [
+          "Refine the boat’s resting height and buoyancy so it sits naturally in the sea, with water contact and wakes aligned as it moves across waves."
+        ]
+      }
+    ]
+  },
+  "hollowflux": {
+    "sourceUrl": "https://developers.openai.com/showcase/hollowflux",
+    "steps": [
+      {
+        "title": "Explore visual directions",
+        "prompts": [
+          "Generate five concept images for a top-down pixel dungeon crawler with real-time combat and a procedural fluid engine. Keep characters, equipment, and monsters simple and readable. Explore distinct environments with reactive water, blood particles, metal sparks, and responsive lighting. Aim for the atmosphere of Animal Well and the systemic variety of Caves of Qud, without ASCII."
+        ]
+      },
+      {
+        "title": "Build a playable encounter",
+        "prompts": [
+          "Build a short, polished combat encounter from the attached Tideglass Caverns concept. Draw the graphics in code and make the character controllable, with enemies to fight. Put dynamic fluid at the center of the encounter, and make the lighting and combat effects match the selected visual direction."
+        ]
+      },
+      {
+        "title": "Tune movement and attacks",
+        "prompts": [
+          "Play through the first combat encounter and identify where movement or attacks feel awkward. Improve the character's movement and attack animations so actions feel responsive and are easy to follow. Test the encounter again while preserving the existing fluid interactions."
+        ]
+      },
+      {
+        "title": "Add experience points",
+        "prompts": [
+          "Add experience points to the playable prototype. Award experience for defeating enemies, track the total, and show progress clearly in the interface. Play through an encounter to check that rewards are recorded correctly."
+        ]
+      },
+      {
+        "title": "Refine the cape and facing",
+        "prompts": [
+          "Give the adventurer a clearly readable red cape. Adjust the character's facing and cape layering for each movement direction, especially when facing upward, so the cape sits correctly behind the character. Check the result while moving and attacking."
+        ]
+      },
+      {
+        "title": "Connect water and electricity",
+        "prompts": [
+          "Make electrical attacks propagate through connected water and damage creatures in the charged area. Keep stone surfaces safe from water-borne electricity. Make the charged water readable, then test the same attack with the player standing in water and on stone."
+        ]
+      },
+      {
+        "title": "Make currents move objects",
+        "prompts": [
+          "Let water currents move physical loot and environmental debris. Make the objects respond to the existing fluid simulation while remaining easy to identify and collect. Test drops in flowing water and on dry ground without changing the electricity and safe-stone rules."
+        ]
+      },
+      {
+        "title": "Build distinct floor themes",
+        "prompts": [
+          "Expand the playable dungeon into seven distinct floor themes. Give each theme its own environment and atmosphere while preserving the established movement, combat, and fluid rules. Connect the floors into a descent that the player can progress through."
+        ]
+      },
+      {
+        "title": "Add inventory and equipment",
+        "prompts": [
+          "Add an inventory and equipment system for the loot found in the dungeon. Let players inspect, store, and equip items, and show how equipped gear affects character stats. Check that collecting and changing gear works during a run."
+        ]
+      },
+      {
+        "title": "Add boss encounters",
+        "prompts": [
+          "Add boss encounters to the dungeon descent. Build on the existing combat and fluid rules, with readable attacks and opportunities to respond. Playtest each encounter to make sure it works with the player's equipment and progression."
+        ]
+      },
+      {
+        "title": "Build the sanctuary",
+        "prompts": [
+          "Add a sanctuary to the dungeon descent with trading, upgrades, and pacts. Make the available choices and their effects clear, and connect them to the player's inventory and progression. Preserve the existing dungeon and fluid interactions when returning to play."
+        ]
+      },
+      {
+        "title": "Keep the action readable",
+        "prompts": [
+          "Review gameplay in areas with bright water, darkness, and overlapping effects. Improve the contrast and silhouettes of the player and enemies so their movement and attacks remain easy to follow. Keep the cavern atmosphere and fluid effects intact."
+        ]
+      },
+      {
+        "title": "Simplify the interface",
+        "prompts": [
+          "Simplify the gameplay and inventory interfaces. Prioritize the information players need to understand their character, equipment, and current choices. Reduce visual clutter and clarify spacing and labels without removing existing actions or stats."
+        ]
+      },
+      {
+        "title": "Rebalance progression",
+        "prompts": [
+          "Play through the dungeon descent and review how experience, equipment, and upgrades affect difficulty. Identify uneven progression and adjust the relevant values. Retest those sections so rewards feel useful and the challenge develops steadily."
+        ]
+      },
+      {
+        "title": "Refine the ambient sound",
+        "prompts": [
+          "Refine the ambient sound across the dungeon themes. Keep the cavern atmosphere while balancing ambience against combat and interaction sounds. Listen during quiet exploration and busy fights, and adjust anything that distracts from important gameplay cues."
+        ]
+      },
+      {
+        "title": "Give weapons distinct attacks",
+        "prompts": [
+          "Expand combat to six weapon families with distinct attacks and physical effects. Differentiate how their reach, timing, and movement feel while keeping attacks readable. Test each family against the same encounter to check that the differences are useful in play."
+        ]
+      },
+      {
+        "title": "Make weapon drops easy to compare",
+        "prompts": [
+          "Make dropped weapons visible as physical objects in the dungeon. Before pickup, compare their damage, reach, attack speed, and movement against the equipped weapon. Keep the comparison readable and verify that collecting and equipping the drop updates the inventory correctly."
+        ]
+      },
+      {
+        "title": "Connect attacks to the water",
+        "prompts": [
+          "Connect each weapon family's attacks to the fluid simulation. Add persistent wakes, eddies, foam, and disturbances that match the attack's motion and physical effect. Test the weapons near water and keep the resulting effects from obscuring characters or loot."
+        ]
+      }
+    ]
+  },
+  "velocity-loop": {
+    "sourceUrl": "https://developers.openai.com/showcase/velocity-loop",
+    "steps": [
+      {
+        "title": "Explore the menu concept",
+        "prompts": [
+          "Generate a menu concept for a realistic, die-cast-style 3D racing game with loop-the-loop tracks and nitrous. Show five course choices, varying difficulty, three assist levels, and best-time records in a clear, readable layout."
+        ]
+      },
+      {
+        "title": "Explore the racing concept",
+        "prompts": [
+          "Generate an on-track concept for the same die-cast-style racing game. Show a blue car racing toward orange loop-the-loop track, with a readable lap timer and nitro indicator. Make the course, car, and racing direction clear."
+        ]
+      },
+      {
+        "title": "Build the first course menu",
+        "prompts": [
+          "Build the first running menu for the racing game. Let players choose among five courses, select an assist level, inspect their best times, and start a race. Keep the layout readable on desktop and mobile."
+        ]
+      },
+      {
+        "title": "Build the first playable racer",
+        "prompts": [
+          "Build a playable die-cast-style 3D racer with five continuous courses, including loop-the-loops and varying difficulty. Add nitrous, three assist levels, timers, medals, and personal-best ghosts. Support keyboard, touch, and gamepad controls, sound, camera switching, and mobile layouts. Play races across all five courses to check how they feel."
+        ]
+      },
+      {
+        "title": "Research, implement and playtest",
+        "prompts": [
+          "Review and playtest the racer, then improve grip, banking, loop contact, and landings. Keep the React, TypeScript, and Three.js architecture with deterministic simulation. Make recorded inputs and ghost playback consistent across frame rates, add adaptive graphics and WebGL recovery, and repeat complete races to evaluate the changes.",
+          "Develop warmer workshop environments and more detailed cars with convincing motion."
+        ]
+      },
+      {
+        "title": "Build a miniature workshop",
+        "prompts": [
+          "Develop miniature workshop environments with warmer lighting, detailed cars, licensed scenery, and generated surface materials. Refine suspension, tire contact, jumps, rivals, and the camera so the vehicles feel grounded. Playtest steering and visibility through loops."
+        ]
+      },
+      {
+        "title": "Generate the workshop materials",
+        "prompts": [
+          "Generate a nine-region material atlas for a miniature 3D workshop, including plaster, oak, painted timber, brass, limestone, leather, and terracotta. Make each region useful as a surface texture on modeled geometry, with consistent scale and lighting. Do not paint the whole workshop as a backdrop."
+        ]
+      },
+      {
+        "title": "Add reasons to replay",
+        "prompts": [
+          "Add a multi-race Workshop Series and a five-course Grand Tour. Tie rewards and clear feedback to controlled drifting, clean recovery, timed boosts, braking, and racing personal-best ghosts. Improve the mobile HUD and retry flow while preserving earned records and older ghosts.",
+          "Add four distinct cars and balance their handling across the courses."
+        ]
+      },
+      {
+        "title": "Add a four-car garage",
+        "prompts": [
+          "Add Atelier GT, Comet Sprint, Apex Needle, and Titan RS, each with different speed, acceleration, grip, braking, and nitro. Keep the home flow focused on choosing a car, choosing a track, and racing. Balance the cars across tracks and assist levels."
+        ]
+      },
+      {
+        "title": "Unify the cars and add shared competition",
+        "prompts": [
+          "Keep each car’s garage model, portrait, and on-track model consistent. Add sign-in and persistent shared rankings, with server-side replay verification that checks submitted times against race inputs. Show standings from the home screen and after a race.",
+          "Refine the camera, nitro, and track layouts for smoother racing."
+        ]
+      },
+      {
+        "title": "Refine the camera, nitro and track flow",
+        "prompts": [
+          "Make the chase camera comfortable through loops, jumps, and landings. Refine nitro duration and recharge, improve jump approaches and landing visibility, and lengthen Ignition, Neon, and Skyline. Check responsive gamepad input and mobile multitouch across every car and track.",
+          "Polish race flow and loading while preserving records and older replays."
+        ]
+      },
+      {
+        "title": "Finish the gameplay and interface",
+        "prompts": [
+          "Play through the complete racing flow and refine Next, Retry, car switching, finish clocks, and medal targets. Make account recovery, rankings, model loading, camera transitions, and imported-record eligibility reliable. Preserve older replays and earned records, and keep the racing interface clear."
+        ]
+      },
+      {
+        "title": "Check the final mobile controls",
+        "prompts": [
+          "Check the completed home screen on a narrow phone viewport. Keep car and track choices, leaderboard access, Settings, and Race visible and easy to use. Verify touch controls and preserve the desktop layout."
+        ]
+      }
+    ]
+  },
+  "little-ritual": {
+    "sourceUrl": "https://developers.openai.com/showcase/little-ritual",
+    "steps": [
+      {
+        "title": "Build the coffee-delivery loop",
+        "prompts": [
+          "Build an original single-player 3D browser game about delivering coffee, set on a small, walkable spherical planet with a curved horizon. Give it a warm, stylized, cutesy look, mixing a compact town with quieter natural areas connected by paths around the globe. Include vertical exploration through stairs, upper floors, and bridges. Start the player in a café beside a coffee machine. Let them carry four visibly modeled coffees and explore to find neighbors, delivering to each once per round. Use a custom 3D interpretation of the Codex pet as the courier and other pets as neighbors. Keep discovery central, with interesting places to explore and small, playful interactions. Build the game modularly so we can change the world, characters, and mechanics easily. Use editable Blender assets, keep browser performance in mind, and begin with a playable version that we can improve through repeated feedback."
+        ]
+      },
+      {
+        "title": "Give the courier a rounded, painted look",
+        "prompts": [
+          "Give the 3D courier a rounded, painted look with soft lighting and clear shapes. Add smiles, blinking, head movements, and small gestures in the game, while keeping the model easy to recognize at gameplay scale."
+        ]
+      },
+      {
+        "title": "Build editable assets in Blender",
+        "prompts": [
+          "Build editable assets in Blender with reproducible Python scripts, then export GLBs with named parts for animation in Three.js. Start with a detailed café espresso machine that fits the game’s rounded, painted style. Retain the editable scenes and verify the exports in the game."
+        ]
+      },
+      {
+        "title": "Expand the town and its quieter corners",
+        "prompts": [
+          "Expand the spherical world with shops, bridges, upper floors, woodland, fields, and rocky paths. Add distinctive destinations such as baths, a kiln, a treehouse archive, and a miniature cinema. Keep routes connected and give players reasons to explore beyond coffee deliveries."
+        ]
+      },
+      {
+        "title": "Add characters and encounters",
+        "prompts": [
+          "Add coffee-making animations, miniature films, musical objects, birds, a grumpy rain-cloud encounter, a disappearing gopher, and a tortoise family. Give inhabitants distinct voices and small interactions. Keep most encounters independent of delivery goals so exploration feels worthwhile on its own."
+        ]
+      },
+      {
+        "title": "Generate the studio mural",
+        "prompts": [
+          "Create an original square flat mural illustration to be applied directly as a texture on the back wall of Sunroom Studio in Little Ritual, a gentle single-player coffee-delivery exploration game. Illustration only, edge-to-edge, no mockup, no perspective, no photograph, no wall or frame rendered around it. Beautiful hand-painted gouache / contemporary folk-art mural with confident large shapes, visible subtle brush grain and carefully balanced negative space. A chubby little periwinkle-blue courier with a scalloped tuft, short rounded arms and legs and a dark navy face panel with two white eyes and a simple white smile carries a wooden tray holding four small takeaway coffee cups. The courier walks along a curling cream-colored path across a tiny rounded world: terracotta neighborhood rooftops, a sage-green café awning, large dusty-rose mushrooms, a weeping willow, warm gray mountain ridges and pale wildflower fields. An oversized cream coffee cup forms a visual centerpiece, its rising steam transforming into flowing cloud ribbons and a warm ochre sun. A tiny bird and a small snail provide a few playful details. Composition must read clearly from a distance, simple big silhouettes and a sense of shared morning life. Muted terracotta, golden ochre, sage, dusty pink, cream and blue, with a warm plaster-colored background. NOT photoreal, no glossy 3D rendering, no black outline cartoon, no busy tiny detail. The only text is a small beautifully hand-painted lowercase signature reading exactly \\\"codex\\\" at the bottom right. No slogans, no other text or lettering, no watermark. Deliver a finished high-quality square illustration suitable for an in-game mural texture."
+        ]
+      },
+      {
+        "title": "Refine movement and mobile controls",
+        "prompts": [
+          "Play through the coffee-delivery loop and exploration routes. Refine paths, signs, stairs, railings, collisions, camera behavior, onboarding, and completion feedback. Add a mobile joystick, pinch zoom, and multitouch controls, and check that movement and interaction remain comfortable on phones."
+        ]
+      },
+      {
+        "title": "Optimize the game and render a trailer",
+        "prompts": [
+          "Optimize the game by reusing geometry and materials, batching scenery, limiting shadow-casting lights, and hiding distant detail. Add original music and sound effects, then render a 30-second cinematic trailer from the game assets. Keep the trailer distinct from a gameplay recording."
+        ]
+      }
+    ]
+  },
+  "physics-museum": {
+    "sourceUrl": "https://developers.openai.com/showcase/physics-museum",
+    "steps": [
+      {
+        "title": "Build five interactive exhibits",
+        "prompts": [
+          "Build a polished interactive science museum with five exhibits.\\n\\nThe concept\\nCreate a beautiful museum that visitors move through in 3D. The museum and its sculptural exhibits must be authored in Blender, with editable .blend sources and a reproducible asset-generation script, then exported for the interactive web experience. Do not put a live model in the visitor experience: all five exhibits are authored in advance, and visitors play with their fixed interactions. No prompt field, chat interface, or runtime content generation.\\n\\nThis should feel like entering a small, extraordinary science museum: architectural daylight, pale mineral walls, a dark reflective floor used sparingly, brass details, translucent glass, carefully composed shadows, and restrained accents of color. Make the objects, lighting, motion, and camera choreography the attraction. Each installation should have a different silhouette and occupy the space differently; some sit on pedestals and others surround the visitor. Avoid turning this into a scrolling landing page or a grid of cards.\\n\\nThe journey\\nBuild one coherent 3D environment with exactly five checkpoints. Start inside the museum with the first exhibit visible and a clear “Begin” action. Previous/Next and a compact 1–5 progress control move the camera smoothly between checkpoints; there is no vertical page scroll. At a checkpoint, offer a well-framed close inspection view with bounded orbit controls and a clear way back. Use short exhibit titles, one sentence inviting the interaction, and only the controls needed for that exhibit. Provide touch-friendly controls, keyboard navigation, a visible Reset, and reduced-motion camera transitions. Give each interaction an obvious, satisfying visual response within a few seconds. The whole guided visit should work as a roughly 2–3 minute demo, with room to linger and experiment.\\n\\nImplement these five distinct exhibits:\\n\\n1. The Glass Alembic — many-body collisions.\\nA tall, intricate glass apparatus on a stone-and-brass pedestal: a bulbous upper reservoir, a visible gate, a wide funnel, a helical chute, a split path, and collecting vessels. Clicking “Release the pearls” sends hundreds of luminous pearlescent spheres through it. They collide, bounce, bunch up at a narrow throat, spill around curves, and form a convincing pile in the vessels. A single fixed gate toggle changes which path the next pearls take. Offer slow motion and reset. This is the hero exhibit: transparent material, readable depth, precise geometry, and tactile collision behavior must look excellent. Build the visible shell and colliders together so beads actually travel through the apparatus and do not clip through it. Use instancing and a particle/body count that the measured performance can sustain. Decorative highlights must not obscure the physics.\\n\\n2. The Pendulum Grove — linked mechanisms and momentum.\\nA room-height kinetic sculpture made of suspended brass arms, counterweights, joints, and differently sized pendulums, arranged like a branching mechanical tree. A visitor pulls and releases one clearly marked handle with bounded drag, or presses a fixed “Set in motion” button. Motion travels through the articulated structure: arms trade momentum, weights swing out of phase, and the whole sculpture resolves into a shifting spatial pattern. A second authored release preset creates a visibly different rhythm. Brief fading trails can reveal the paths without cluttering the scene. Use actual constrained rigid-body dynamics with damping and joint limits; make the cause and effect legible, with a stable reset pose. This installation should feel like a delicate moving sculpture, not another marble track.\\n\\n3. The Silk Chamber — cloth, wind, and contact.\\nEnter a small pavilion containing a flowing silk canopy and long fabric ribbons around a smooth, sculptural torus or similarly distinctive Blender-authored form. Visitors choose among three authored wind states: Still, Breeze, and Gust. Fabric should billow, wrinkle, drape, and react to contact with the central form. The Gust action creates a dramatic sweep that briefly reveals the form before the cloth settles back. Use a bounded real-time cloth simulation with explicit distance/bending constraints and collision handling at an appropriate resolution. Choose anchor points and collider geometry that make stable, visibly convincing behavior achievable. Do not substitute a looping sine-wave shader and call it cloth physics. Favor readable folds, backlighting, and rich fabric material over excessive mesh density.\\n\\n4. The Wave Chamber — interference in a spatial field.\\nMove to the edge of a broad circular shallow basin beneath an architectural dome. Its surface is a luminous, translucent membrane or stylized water, with a sculptural obstacle in the basin. Two fixed source points can be tapped individually or together. Visitors can select an authored in-phase or opposing-phase preset and watch expanding waves meet, interfere, reflect at boundaries, and form changing standing-wave patterns. The camera can lower toward the surface so peaks and troughs feel spatial, then return overhead to reveal the pattern. Implement a stable numerical wave-field simulation with damping and sensible boundaries. Let the field itself drive surface displacement and restrained lighting effects. Describe it accurately as a wave simulation; do not imply a complete fluid solver.\\n\\n5. Three Suns — orbital motion and an immersive finale.\\nThe final installation begins as a floating miniature orrery. Pressing “Step inside” moves the visitor into a planetarium-scale view of the same system, surrounded by the trails of three luminous masses. Provide two curated starting conditions: a carefully validated stable choreography and a small perturbation of that initial condition that produces a visibly different trajectory. Let visitors replay and slow time to inspect how paths diverge. Use numerical gravitational integration with bounded simulation duration, a controlled time step, appropriate handling of near encounters, and honest scaling. Keep bright bodies distinct from their trails; use trails as geometry in space rather than a flat overlay. If a proposed stable preset is not numerically reliable, choose a well-supported preset and validate it before shipping. Finish with a quiet view back across the museum and a “Visit again” action."
+        ]
+      },
+      {
+        "title": "Add walking and mouse look",
+        "prompts": [
+          "It still feels too much like a landing page. I want to move around with the mouse in a first-person view and use the arrow keys to walk."
+        ]
+      },
+      {
+        "title": "Arrange the exhibits in an open room",
+        "prompts": [
+          "Moving in the museum is not very fluid. Change the layout to a room where you can walk around, using this sketch as inspiration rather than copying it exactly."
+        ]
+      },
+      {
+        "title": "Inspect exhibits with a click",
+        "prompts": [
+          "When I click an exhibit, zoom in as if I had chosen Inspect. Make the room more beautiful and detailed; it looks too bland."
+        ]
+      },
+      {
+        "title": "Set inspected exhibits in motion",
+        "prompts": [
+          "Once I have zoomed in to inspect a sculpture, clicking it again should set it in motion."
+        ]
+      },
+      {
+        "title": "Improve materials and lighting",
+        "prompts": [
+          "Make the 3D objects more impressive, with better textures and lighting."
+        ]
+      }
+    ]
+  },
+  "living-cell": {
+    "sourceUrl": "https://developers.openai.com/showcase/living-cell-cross-section",
+    "steps": [
+      {
+        "title": "Build the living cell",
+        "prompts": [
+          "Build this interactive 3D experience as a single self-contained index.html that works offline. Keep the HTML, CSS, JavaScript, procedural geometry, textures, and shaders inline, with no external dependencies or downloaded assets. Use browser-native WebGL with a graceful fallback if unavailable. Support desktop and mobile, keyboard-accessible controls, pause/resume, and reduced motion. Keep animation smooth and rendering performance bounded.\\n\\nBuild a luminous interactive cross-section of a living eukaryotic cell at molecular scale. Show an unmistakable phospholipid bilayer as two dense instanced layers with hydrophilic heads and paired hydrophobic tails. Animate membrane channels opening, receptor binding, and a selective concentration gradient of moving ions. Inside the cytoplasm, construct procedural microtubules carrying kinesin-like walking motor proteins and glowing cargo vesicles; include a cutaway mitochondrion with folded cristae and visible rotary ATP-synthase-inspired structures. Add Brownian-motion particles, ribosome-like clusters, actin fibers, and soft depth-aware fluorescence using restrained cyan, ultraviolet, and coral. Distinguish inside from outside with coherent scale and lighting. Provide orbit/zoom, a clipping or exploded-view slider, transport-speed control, pause/resume, and pointer inspection that identifies the nearest major structure. Favor readable biological mechanisms over an arbitrary cloud of spheres."
+        ]
+      },
+      {
+        "title": "Refine the compact layout",
+        "prompts": [
+          "Refine the responsive layout so the cell remains easy to inspect on small screens, including compact landscape views. Keep structure labels and simulation controls readable and accessible without covering the main scene. Preserve the desktop design and all existing interactions."
+        ]
+      }
+    ]
+  },
+  "clockwork-observatory": {
+    "sourceUrl": "https://developers.openai.com/showcase/impossible-kinetic-architecture",
+    "steps": [
+      {
+        "title": "Generate the observatory",
+        "prompts": [
+          "Build this interactive 3D experience as a single self-contained index.html that works offline. Keep the HTML, CSS, JavaScript, procedural geometry, textures, and shaders inline, with no external dependencies or downloaded assets. Use browser-native WebGL with a graceful fallback if unavailable. Support desktop and mobile, keyboard-accessible controls, pause/resume, and reduced motion. Keep animation smooth and rendering performance bounded.\\n\\nConstruct an original cinematic impossible observatory inspired by historical fantastical prison etchings and precise astronomical instruments, without copying any source image. Build a cavernous architectural volume from marble, aged brass, carved stone, and deep shadow, populated with recursive staircases, elevated bridges, suspended orreries, giant interlocking gears, archways, and portal-like apertures. Make the world mechanically reconfigure in a continuous staged sequence: stairs fold and rotate, bridges extend, concentric armillary rings turn, counterweights descend, and architectural segments align into a fleeting impossible loop before separating again. Use convincing procedural bevel or edge treatment, ambient occlusion approximations, dust motes, warm practical light against cool moonlight, and a strong deliberate camera composition. Include orbit/zoom, a metamorphosis progress slider, mechanism speed, pause/resume, and click-to-follow portal or camera transitions. The geometry should communicate elegant impossible spatial relationships rather than becoming a random pile of boxes and cylinders."
+        ]
+      },
+      {
+        "title": "Refine rendering reliability",
+        "prompts": [
+          "Check the observatory in the browser and make its rendering reliable across supported devices. Verify shader compilation, initialization, resizing, and pause/resume. Preserve the architecture, materials, moving mechanisms, and camera controls, and keep the standalone experience working offline."
+        ]
+      }
+    ]
+  },
+  "abyssal": {
+    "sourceUrl": "https://developers.openai.com/showcase/abyssal-bioluminescent-ecosystem",
+    "steps": [
+      {
+        "title": "Build the underwater ecosystem",
+        "prompts": [
+          "Build this interactive 3D experience as a single self-contained index.html that works offline. Keep the HTML, CSS, JavaScript, procedural geometry, textures, and shaders inline, with no external dependencies or downloaded assets. Use browser-native WebGL with a graceful fallback if unavailable. Support desktop and mobile, keyboard-accessible controls, pause/resume, and reduced motion. Keep animation smooth and rendering performance bounded.\\n\\nRender an original deep-ocean ecosystem surrounding a hydrothermal vent and towering procedurally grown coral or mineral formations. Establish strong depth with underwater fog, volumetric-looking light shafts, animated caustic approximations, marine-snow particles, and a dark abyss beyond the habitat. Populate the scene with multiple believable behaviors: a coherent boid-like school of tiny bioluminescent fish that steers around obstacles, translucent jellyfish with rhythmic bells and articulated trailing tentacles, swaying anemones or tube worms, and occasional larger luminous creatures. Give the hydrothermal vent rising turbulent particulate plumes and nearby organisms independent pulses rather than synchronized flashing. Cursor or touch disturbances should scatter and regather nearby fish; expose controls for current strength, bioluminescence intensity, and day/night or ambient depth. Include smooth orbit and a graceful slow cinematic idle camera. Procedurally generate all forms and textures; use cyan, violet, and occasional warm vent-orange against authentic inky water."
+        ]
+      },
+      {
+        "title": "Refine the compact layout",
+        "prompts": [
+          "Refine the responsive layout so the underwater scene stays visible on small screens, including compact landscape views. Keep titles, labels, and environmental controls readable and separate, without crowding the habitat. Preserve the desktop composition, artwork, animation, and interactions."
+        ]
+      }
+    ]
+  },
+  "architecture-studio": {
+    "sourceUrl": "https://developers.openai.com/showcase/architecture-studio",
+    "steps": [
+      {
+        "title": "Build the room planner",
+        "prompts": [
+          "Build a room planner with one shared document powering a dimensioned 2D floor plan and a synchronized 3D view. Let people resize a rectangular room, place furniture from an original collection, move and rotate pieces, change finishes, and undo edits. Keep furniture editing in the plan and make the 3D view easy to orbit and inspect."
+        ]
+      },
+      {
+        "title": "Create the furniture collection",
+        "prompts": [
+          "Create a coordinated collection of original furniture and room objects with warm wood, soft upholstery, and simple materials. Give each piece an accurate footprint, a recognizable silhouette, and a useful catalog preview."
+        ]
+      },
+      {
+        "title": "Refine the planning experience",
+        "prompts": [
+          "Refine the planning experience so selection, furniture placement, and camera controls feel consistent. Make the active tool and selected object clear, and keep the controls focused on what can be edited in each view."
+        ]
+      },
+      {
+        "title": "Export the room and plan",
+        "prompts": [
+          "Add exports for the 2D plan and the 3D room image, plus a project file that can be reopened for editing. Keep furniture positions, room dimensions, and finishes consistent across the exported outputs."
+        ]
+      },
+      {
+        "title": "Adapt the planning panels",
+        "prompts": [
+          "Make the side panels work well across desktop, tablet, and mobile. Keep the room view visible, give smaller-screen panels clear ways to open and close, and check both portrait and landscape layouts."
+        ]
+      },
+      {
+        "title": "Save rooms on a device or account",
+        "prompts": [
+          "Clearly show when a project is saved on this device. Add an optional Sign in with ChatGPT flow for saving rooms to an account and reopening them later, with furniture, finishes, dimensions, and view settings preserved."
+        ]
+      }
+    ]
+  },
+  "asterism": {
+    "sourceUrl": "https://developers.openai.com/showcase/asterism",
+    "steps": [
+      {
+        "title": "Initial prompt",
+        "prompts": [
+          "Build “Asterism,” a single-player constellation-building card game that is easy to understand and difficult to master. The player chooses a Luminary—Terra, Luna, or Sol—then plays a finite deck of named star cards into constellation diagrams. Every card has Light, Origin, and Spectrum. Each connecting line applies a clear scoring condition, and each completed pattern has an additional constellation objective. The core decision is which star to commit now without starving later constellations in the same Night.\\n\\nStructure a run as three Nights, each with three constellations and an escalating Light target. The third constellation of each Night introduces a celestial boss that changes the puzzle rather than becoming a separate combat system. Reset the deck between Nights while preserving run-level Alignment choices. Include an Observatory where players can revisit discovered stars, constellations, Luminaries, bosses, and completed runs. Keep progression horizontal rather than adding permanent stat boosts.\\n\\nMake the visual direction feel like a refined celestial folio: warm ivory, midnight blue, old gold, botanical and astronomical ornament, and tactile cards. Keep the board readable before decorative. Support mouse, touch, and keyboard play, clear accessible names, visible focus, reduced motion, and responsive desktop/mobile layouts. Add restrained animation, particles, music, and sound feedback without obscuring scoring.\\n\\nBuild and test the complete playable vertical slice, including tutorial, settings, local persistence, and a public Sites deployment. Run lint, build, and tests, then verify the full three-Night loop plus key responsive and accessibility states."
+        ]
+      },
+      {
+        "title": "Iteration 1",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nExplored several celestial game loops, then chose finite-deck constellation placement as the core puzzle."
+        ]
+      },
+      {
+        "title": "Iteration 2",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nBuilt the scoring grammar: named star cards, Light, Origin, Spectrum, constellation nodes, line rules, and pattern objectives."
+        ]
+      },
+      {
+        "title": "Iteration 3",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nAdded Luminary selection and distinct Terra, Luna, and Sol Aspects to create different strategic openings."
+        ]
+      },
+      {
+        "title": "Iteration 4",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nExpanded the prototype into a three-Night run with three constellations per Night, escalating targets, and boss disruptions on the final pattern."
+        ]
+      },
+      {
+        "title": "Iteration 5",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nAdded Alignments, discoveries, the Observatory, saved progress, and run history while keeping progression horizontal."
+        ]
+      },
+      {
+        "title": "Iteration 6",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nDeveloped the celestial-folio art direction, card visual language, constellation map, portraits, and title artwork."
+        ]
+      },
+      {
+        "title": "Iteration 7",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nAdded motion, particles, music, sound effects, touch and keyboard support, reduced motion, accessible labeling, and responsive layouts."
+        ]
+      },
+      {
+        "title": "Iteration 8",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nHardened the release surface, ran build, lint, tests, and browser QA, then published the self-contained game on Sites."
+        ]
+      },
+      {
+        "title": "Final pass",
+        "prompts": [
+          "Complete the project with this final pass, verify the result, and preserve working behavior:\\n\\nCompleted release hardening and browser QA, verified the full three-Night loop and responsive and accessibility states, then published the self-contained game on Sites."
+        ]
+      }
+    ]
+  },
+  "backroom-center": {
+    "sourceUrl": "https://developers.openai.com/showcase/backroom-center-corrupted",
+    "steps": [
+      {
+        "title": "Initial prompt",
+        "prompts": [
+          "Build a first-person 3D exploration game around an infinite maze inspired by the Backrooms.\\n\\nGenerate an endless, navigable data-center labyrinth where the player can walk, explore, and become lost. The environment should feel liminal and unsettling: long server aisles, empty rooms, abandoned office furniture, cables, dark corridors, and occasional illuminated spaces.\\n\\nPresent the entire experience through an old VHS camcorder. Add scanlines, grain, timestamps, a recording symbol, tracking distortion, and other analog-video imperfections. This treatment should allow the underlying world to use a deliberately low-poly visual style.\\n\\nLighting should be dark but still readable. Server racks should emit green, red, blue, and blinking LEDs, while fluorescent ceiling lights activate, flicker, or remain broken.\\n\\nBuild a layered ambient soundscape from ventilation, electrical hum, server fans, hard-drive activity, and fluorescent lights. Sounds should become more noticeable as the player approaches their source.\\n\\nFocus on atmosphere rather than objectives or combat. The experience should make the player feel trapped inside an infinite, deteriorating data center."
+        ]
+      },
+      {
+        "title": "Iteration 1",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nBuilt the first playable version with a deterministic infinite maze, streamed world generation, connected service corridors, collision-safe rooms, first-person movement, desktop controls, and touch support."
+        ]
+      },
+      {
+        "title": "Iteration 2",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nExpanded the environment with varied server racks, multicolored animated LEDs, abandoned furniture, cables, emergency rooms, blackout sectors, and a larger generation window so new sections remained hidden behind the fog."
+        ]
+      },
+      {
+        "title": "Iteration 3",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nReworked the camcorder presentation through several visual passes: natural full-screen scanlines, restrained artifacts, YIQ chroma bleed, composite ringing, highlight bloom, head-switch noise, and an occasional slow tracking band moving down the screen."
+        ]
+      },
+      {
+        "title": "Iteration 4",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nDeveloped a procedural spatial soundscape with ventilation, transformer hum, server motors, nearby hard-drive activity, fluorescent ignition sounds, and directional ballast noise that responds to distance and camera direction."
+        ]
+      },
+      {
+        "title": "Iteration 5",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nPolished the environment and presentation with generated plaster, raised-floor, and acoustic-ceiling materials; repaired floor seams and wall intersections; refined fixture brightness; added a randomized tape number; and reduced the opening screen to 'The data is corrupted.' and a single 'REC' button."
+        ]
+      },
+      {
+        "title": "Final pass",
+        "prompts": [
+          "Complete the project with this final pass, verify the result, and preserve working behavior:\\n\\nCompleted the final atmosphere and stability pass so the procedural maze, server variety, dynamic lighting, spatial audio, liminal materials, and VHS camera treatment felt like one cohesive experience. The production build was validated with automated connectivity, collision, spatial-audio, and rendering checks, then published through ChatGPT Sites."
+        ]
+      }
+    ]
+  },
+  "below-the-surface": {
+    "sourceUrl": "https://developers.openai.com/showcase/below-the-surface",
+    "steps": [
+      {
+        "title": "Build a continuous ocean descent",
+        "prompts": [
+          "Build a complete, polished, interactive landing page. Use clear, natural copy and a restrained layout with purposeful controls. Keep native scrolling, support phone and desktop layouts, keyboard controls, and reduced motion. The main interaction should work without a runtime AI call or account.\\n\\nScenario: Below the Surface is a digital ocean exhibition. A visitor scrolls from the sunlit surface into the deep sea, discovering how light, pressure and animals change with depth. This should demonstrate immersive visual storytelling and clear scientific explanation.\\n\\nArt direction: a bright atmospheric surface that becomes saturated blue, then near-black; large, carefully composed marine illustrations or 3D specimens, restrained luminous accents, and confident typography with generous negative space. Avoid a science-dashboard layout. The ocean itself is the page.\\n\\nHero: “Explore the ocean by depth.” “Start the descent” leads into one continuous scroll journey. Use parallax among water layers, marine snow and specimens, and a compact depth indicator that helps orient the visitor. Native scrolling must remain natural, with reversible changes in depth, light and content.\\n\\nChoose four or five evidence-based depth zones and a small set of accurately placed animals. Research the key depth/size facts in reliable scientific or museum sources and keep citations accessible through a compact sources section. Do not invent research findings, exact species ranges or live sensor data.\\n\\nAt selected depths, visitors can inspect a specimen without leaving the scene: gently rotate it, switch bioluminescence on/off where biologically appropriate, or reveal a simple annotated cutaway. Clearly distinguish an explanatory light control from a claim that every animal glows. Add a “Compare sizes” view where the same scale is applied to the specimen and a diver or research submersible, with a visible scale reference.\\n\\nAt the deepest chapter, a controlled light beam can be moved with pointer/touch or keyboard to reveal details in a bounded part of the scene. Provide an equivalent “Light the scene” control so the interaction never blocks reading. The final action returns to the surface and leaves an elegant summary of the depth zones.\\n\\nUse accurate silhouettes and anatomy; generate or model assets deliberately and retain sources. Keep particles and displacement performant, pause offscreen simulation, and provide a beautiful reduced-motion version. Test rapid forward/back scrolling, detail open/close, depth synchronization, scale comparisons, touch and recovery to the surface. The result should be an engaging exhibition landing page with science visitors can trust.",
+          "Create an underwater background with sunlight and a gradual shift into depth."
+        ]
+      },
+      {
+        "title": "Generate the ocean background",
+        "prompts": [
+          "Generate a wide underwater ocean background for a digital exhibition. Put a turquoise rippled surface along the upper edge, diagonal sunlight from the upper left, and spacious ultramarine depths below. Keep the composition atmospheric and open, with no animals, objects, seabed, or text."
+        ]
+      },
+      {
+        "title": "Rewrite the exhibition copy",
+        "prompts": [
+          "Rewrite the exhibition copy with clear scientific explanations and direct, useful interaction labels. Keep the existing interface, layout, and visuals unchanged."
+        ]
+      }
+    ]
+  },
+  "biome-lab": {
+    "sourceUrl": "https://developers.openai.com/showcase/biome-lab",
+    "steps": [
+      {
+        "title": "Initial prompt",
+        "prompts": [
+          "Build “Biome Lab,” a procedural ecosystem sandbox that runs entirely in the browser. The main view is a living 3D terrarium containing terrain, water, plants, and a few simple animal populations. Let users adjust rainfall, temperature, terrain height, water level, and species balance, then immediately see the ecosystem respond.\\n\\nUse deterministic procedural rules rather than an external API or large dataset. Changes should affect plant coverage, water, animal counts, colors, and ambient motion, with compact charts showing population and environmental trends. Include useful presets, a seed control, pause and play, reset, and randomize. The result should feel like a visual experiment, not a scientific dashboard.\\n\\nKeep the simulation understandable and performant rather than biologically exhaustive. Support desktop and mobile, run build and lint, and verify presets, controls, reset, and sustained animation in the browser with no console errors or major frame-rate issues."
+        ]
+      },
+      {
+        "title": "Iteration 1",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nBuilt the seeded React Three Fiber ecosystem with terrain, water, vegetation, weather, wildlife, environmental controls, presets, playback, reset, randomization, and live sparklines."
+        ]
+      },
+      {
+        "title": "Iteration 2",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nExpanded the scene with denser flora, varied rock formations, water life, and recognizable low-poly deer, capybaras, foxes, wolves, fish, and ducks."
+        ]
+      },
+      {
+        "title": "Iteration 3",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nStopped camera, water, vegetation, weather, chart, and day movement while idle so only wildlife moves until a setting changes."
+        ]
+      },
+      {
+        "title": "Iteration 4",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nRebuilt the trees with cohesive faceted crowns, tapered trunks, grounded roots, richer foliage variation, and distinct broadleaf, wetland, and pine silhouettes."
+        ]
+      },
+      {
+        "title": "Final pass",
+        "prompts": [
+          "Complete the project with this final pass, verify the result, and preserve working behavior:\\n\\nFinished a responsive procedural terrarium with expressive low-poly ecosystems, deterministic controls, understandable trends, and motion that stays calm until the user intervenes."
+        ]
+      }
+    ]
+  },
+  "codex-modeling-studio": {
+    "sourceUrl": "https://developers.openai.com/showcase/codex-modeling-studio",
+    "steps": [
+      {
+        "title": "Initial prompt",
+        "prompts": [
+          "Plan and implement a browser-based 3D modeling studio that Codex can operate through WebMCP. Give it tools for creating and editing models, composing basic scenes, applying materials, and rendering polished individual assets.\\nThe studio should run in the browser without a built-in application server. Design it primarily for Codex to create, inspect, and refine models through tools, with a clean interface that lets the user follow along.\\nPrioritize the model viewport over a dense manual-editing dashboard. Deploy it as a hosted website."
+        ]
+      },
+      {
+        "title": "Iteration 1",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nStarted with a WebAssembly and WebGPU client."
+        ]
+      },
+      {
+        "title": "Iteration 2",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nAdded tools, then had Codex use them to find limitations."
+        ]
+      },
+      {
+        "title": "Iteration 3",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nRepeated that loop to improve the tools' expressiveness and latency."
+        ]
+      },
+      {
+        "title": "Iteration 4",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nAdded a feedback tool backed by the Sites database."
+        ]
+      }
+    ]
+  },
+  "codex-pet-arena": {
+    "sourceUrl": "https://developers.openai.com/showcase/codex-pet-arena",
+    "steps": [
+      {
+        "title": "Initial prompt",
+        "prompts": [
+          "Build a playful single-player browser game called “Codex Pet Arena.” The player chooses one of eight original animated pets and competes against CPU-controlled pets in a large side-scrolling platform arena.\\n\\nThe main goal is to collect glowing Codex tokens placed across platforms, moving routes, hidden corners, and risky high places. Each token increases the pet’s score and gradually makes it bigger. Pets can bump or stomp one another, causing some tokens to spill out for anyone to collect. The biggest, highest-scoring pet should feel powerful and lead the leaderboard.\\n\\nStart with a fun core: responsive movement and jumping, a scrolling arena, simple platforms, collectible tokens, and CPU pets that can move around and compete for them. Then add growth up to 3×, attacks, occasional power-ups, changing maps, and satisfying effects.\\n\\nUse ImageGen and the hatch-pet skill to create eight original pets with distinct personalities and a small set of consistent animations.\\n\\nMake the arena wide enough to explore in both directions. Add moving platforms, spring pads, shortcuts, hazards, and rewarding token routes. Change the map and rearrange the platforms every 30 seconds. Give different maps their own playful effects, including a Moon map with low gravity.\\n\\nKeep the interface simple and let the game fill the screen. Add upbeat music, fun sound effects, particles, screen shake, and other small touches that make collecting tokens and hitting rivals feel satisfying.\\n\\nMake it colorful, fast, slightly chaotic, and easy to understand within a few seconds. Focus on creating something genuinely fun and playable rather than reproducing every possible feature."
+        ]
+      },
+      {
+        "title": "Iteration 1",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nPrototyped the core loop with placeholder shapes, one map, player movement, jumping, camera scrolling, platforms, and collectible Codex tokens, then tuned movement and collecting until they felt good."
+        ]
+      },
+      {
+        "title": "Iteration 2",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nAdded CPU rivals that find nearby tokens, move between reachable platforms, and occasionally chase or avoid the player."
+        ]
+      },
+      {
+        "title": "Iteration 3",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nAdded growth and combat so tokens increase score and size, pets can stomp and knock back rivals, and defeated pets spill tokens for others to steal."
+        ]
+      },
+      {
+        "title": "Iteration 4",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nReplaced the placeholders with eight original animated pets created with ImageGen and the hatch-pet skill once the mechanics were stable."
+        ]
+      },
+      {
+        "title": "Iteration 5",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nExpanded the arena with a wider world, an improved camera, natural platform arrangements, moving platforms, spring pads, shortcuts, and risky routes."
+        ]
+      },
+      {
+        "title": "Iteration 6",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nIntroduced rotating maps that rearrange platforms every 30 seconds and add gameplay twists such as low gravity or faster movement."
+        ]
+      },
+      {
+        "title": "Iteration 7",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nLayered in arcade effects with power-ups, a super ability, combos, token storms, particles, music, sound effects, and screen shake."
+        ]
+      },
+      {
+        "title": "Iteration 8",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nPolished the interface and CPU decisions, tested keyboard and touch controls plus performance across map rotations, and published the playable version."
+        ]
+      },
+      {
+        "title": "Final pass",
+        "prompts": [
+          "Complete the project with this final pass, verify the result, and preserve working behavior:\\n\\nCompleted keyboard, touch, and multi-map performance testing, then published the polished single-player arena with animated pets, rotating maps, growth, combat, and arcade effects."
+        ]
+      }
+    ]
+  },
+  "courtyard-house": {
+    "sourceUrl": "https://developers.openai.com/showcase/courtyard-house",
+    "steps": [
+      {
+        "title": "Build a house you can explore",
+        "prompts": [
+          "Build a complete, polished, interactive landing page. Use clear, natural copy and a restrained layout with purposeful controls. Keep native scrolling, support phone and desktop layouts, keyboard controls, and reduced motion. The main interaction should work without a runtime AI call or account.\\n\\nScenario: an architectural practice presents Courtyard House, an imagined compact home organized around a planted courtyard. The visitor wants to understand the plan, how spaces connect and how daylight moves through the building. This is a focused architecture-project landing page, not an interior moodboard generator.\\n\\nArt direction: gallery white, charcoal drawing lines, natural oak and one restrained terracotta accent. Architectural photography/renders, meticulous diagrams, a clear modern typeface and large whitespace. The drawing and building are the visual identity.\\n\\nHero: “A small house built around daylight.” Present one excellent exterior/axonometric image and an “Explore the house” action. Build a single geometrically coherent model and use it throughout the page.\\n\\nThe main interaction is a reversible scroll from exterior to roof-off cutaway to floor plan. A section-plane control then lets the visitor cut across the actual geometry to see room relationships, wall thickness, openings and the courtyard. Named room labels attach to the correct spaces and remain readable; do not put a generic render beside an unrelated invented plan.\\n\\nProvide a time-of-day slider for one explicitly defined illustrative site orientation and season. Sun direction, shadows through openings and the diagram compass must agree. Use simplified lighting if necessary, but do not invent energy-use or daylight-compliance metrics. Show the time and orientation only where they help explain the view.\\n\\nVisitors can select one room to see its connected interior view, compare two materially different facade/finish options, and return to the overview without losing their section/time state. Finish with a compact plan/specification summary and a “Download project sheet” action that exports the actual selected plan and views. Areas and dimensions should derive consistently from the model or be omitted.\\n\\nUse authored 3D geometry with editable model or procedural source and a credible lighting setup. Do not rely entirely on image crossfades. On mobile, offer clear presets for plan/section/exterior rather than forcing difficult free-camera gestures. Verify camera bounds, clipping, labels, room mapping, sun/compass consistency, export and state restoration. The page should communicate a building beautifully and precisely."
+        ]
+      },
+      {
+        "title": "Refine the architectural copy",
+        "prompts": [
+          "Edit the copy lightly so it feels natural and specific without being too literal. Preserve the quiet architectural tone and the existing layout."
+        ]
+      }
+    ]
+  },
+  "cubecade": {
+    "sourceUrl": "https://developers.openai.com/showcase/cubecade-rubiks",
+    "steps": [
+      {
+        "title": "Initial prompt",
+        "prompts": [
+          "Create an arcade-style @Sites experience centered on a spinning 3D cube puzzle. Support buttons and direct drag gestures for legal row or face rotations. Add WebMCP tools that can read the complete puzzle state and accept an array of moves, queueing and animating them quickly. Make it playful, visually distinctive, and suitable for both direct manipulation and agent-driven solving."
+        ]
+      },
+      {
+        "title": "Iteration 1",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nCreated the initial site with ChatGPT."
+        ]
+      },
+      {
+        "title": "Iteration 2",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nAdjusted the layout and placement of interface elements."
+        ]
+      },
+      {
+        "title": "Iteration 3",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nRefined the cube animation and drag gestures."
+        ]
+      }
+    ]
+  },
+  "field-day": {
+    "sourceUrl": "https://developers.openai.com/showcase/field-day",
+    "steps": [
+      {
+        "title": "Initial prompt",
+        "prompts": [
+          "Build “Field Day,” a cheerful storefront for picnic supplies such as blankets, baskets, enamel cups, glasses, and tableware. Use a bright editorial art direction with cutout product imagery, gingham-inspired layout details, and a conventional, easy-to-use product grid. Include product details, filters, a local cart, and a build-a-picnic gift set.\\n\\nThe signature interaction is an illustrated picnic basket fixed beside the product list. Users can drag products into it or use an accessible Add button; each item should follow a playful arc into the basket. The basket should visibly fill and unfold into a tidy gift-set summary before being added to the cart. Add a scroll animation where a picnic blanket unfolds to introduce the collection.\\n\\nNo backend or checkout integration is required. Make drag-and-drop work with touch and provide keyboard alternatives. Run build and lint, then verify catalog, gift-set, and cart flows on desktop and mobile with no console errors."
+        ]
+      },
+      {
+        "title": "Iteration 1",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nBuilt the responsive catalog, filters, sorting, product details, animated basket, blanket reveal, editable gift-set review, and persistent local cart."
+        ]
+      },
+      {
+        "title": "Iteration 2",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nGenerated transparent product and basket sprites, expanded the catalog to 13 products, added Accessories, and rebuilt the flight arcs, touch gestures, landing slots, and layered basket rendering."
+        ]
+      },
+      {
+        "title": "Iteration 3",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nRemoved the basket item limit, kept every selection in the gift set, and displayed only the five newest products partially occluded inside the basket for a believable visual preview."
+        ]
+      },
+      {
+        "title": "Final pass",
+        "prompts": [
+          "Complete the project with this final pass, verify the result, and preserve working behavior:\\n\\nFinished a playful, accessible storefront with 13 products, convincing basket-filling interactions, unlimited gift-set selections, and verified desktop and mobile cart flows."
+        ]
+      }
+    ]
+  },
+  "frame-studio": {
+    "sourceUrl": "https://developers.openai.com/showcase/frame-studio",
+    "steps": [
+      {
+        "title": "Build a studio with three original films",
+        "prompts": [
+          "Build a complete, polished, interactive landing page. Use clear, natural copy and a restrained layout with purposeful controls. Keep native scrolling, support phone and desktop layouts, keyboard controls, and reduced motion. The main interaction should work without a runtime AI call or account.\\n\\nScenario: Frame Studio is an imagined independent motion-design practice. Its landing page should let a prospective client see the quality of its work and understand how a campaign develops. Show animation, composition, and audiovisual-interface skills through original work.\\n\\nArt direction: bold black and white with acid lime and ultramarine accents, large direct headings, sharp grids and generous full-bleed motion stages. It should feel like a contemporary creative studio.\\n\\nHero: “Motion design for products and campaigns.” Create a short original silent showreel with three visually distinct scenes: a sculptural product reveal, a typographic transformation and an abstract material study. These should be actual coherent authored animations or original rendered clips, not stock footage or a screenshot pretending to play. Use real 3D/procedural geometry when useful and keep the initial load sensible.\\n\\nThe signature interaction is a visible, scrubbable film timeline that drives the hero stage. Visitors can play/pause, drag to an exact frame and select a scene. Playback, timeline position and active scene must always agree. On scroll, the same stage transitions into a project story rather than restarting random animation.\\n\\nFor each of the three projects, provide a useful “Storyboard / Final” comparison. A draggable divider or toggle should compare matching compositions at the same moment, with concise production notes about what changed. Offer widescreen/portrait format previews that deliberately recompose the motion within each frame, not merely crop the important object away.\\n\\nFollow with a compact project index and a local shortlist. A “Save project references” action downloads a contact-sheet PDF or image containing the chosen frames/projects, providing a real outcome. No real client logos, fabricated awards or fake submitted contact form.\\n\\nUse purposeful motion timing, controlled easing and excellent typography. Avoid full-page cursor gimmicks that interfere with reading. Provide reduced-motion still sequences, keyboard timeline control and usable phone playback. Test seeking, pause, format switching, project comparisons, saved-frame fidelity and scroll position changes. Deliver a studio landing page with three finished original pieces and a working way to inspect the craft."
+        ]
+      }
+    ]
+  },
+  "glass-towers": {
+    "sourceUrl": "https://developers.openai.com/showcase/glass-towers",
+    "steps": [
+      {
+        "title": "Initial prompt",
+        "prompts": [
+          "Build “Glass Towers,” a minimalist 3D browser game about balancing translucent objects. Place a small pedestal in the center of the scene. The player moves the next glass piece horizontally, then clicks, taps, or presses Space to drop it. The goal is to create the tallest stable sculpture; the run ends when a piece falls off the pedestal.\\n\\nUse Three.js or React Three Fiber and a lightweight physics library if helpful. Create a reusable set of attractive glass shapes with different sizes and centers of mass. Focus on convincing transparency, reflections, soft studio lighting, and satisfying impact animation without sacrificing performance. Include a score, local best score, next-piece preview, restart control, and clean game-over state.\\n\\nSupport mouse, touch, and keyboard. Run build and lint, then play several runs in the browser to verify collisions, scoring, failure, and restart with no console errors."
+        ]
+      },
+      {
+        "title": "Iteration 1",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nBrought an existing tower-stacking physics prototype and clean camera controls into a more capable WebAssembly and WebGPU engine, enabling native-quality browser rendering and high-performance physics."
+        ]
+      },
+      {
+        "title": "Iteration 2",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nGot the core game running quickly, then used GPT-5.6 Ultra for repeated passes on the gallery environment, replacing low-quality assets and a static-image look with refined geometry, shaders, and a fully rendered background."
+        ]
+      },
+      {
+        "title": "Iteration 3",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nUpgraded the glass materials to take advantage of WebGPU, improving transmission quality, contrast, and readability against the pastel environment."
+        ]
+      },
+      {
+        "title": "Iteration 4",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nMade the camera smoothly track upward as the tower grows and descend with a collapse while keeping the structure visible."
+        ]
+      },
+      {
+        "title": "Iteration 5",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nRebalanced placement so repeated stationary clicks were no longer optimal and added block-size scaling to make each stack more varied."
+        ]
+      },
+      {
+        "title": "Final pass",
+        "prompts": [
+          "Complete the project with this final pass, verify the result, and preserve working behavior:\\n\\nCompleted an intensive polish pass across WebGPU rendering, environment assets, glass materials, camera behavior, and placement balance, then published the standalone build."
+        ]
+      }
+    ]
+  },
+  "kiln": {
+    "sourceUrl": "https://developers.openai.com/showcase/kiln",
+    "steps": [
+      {
+        "title": "Initial prompt",
+        "prompts": [
+          "Build “Kiln,” a small contemporary ceramics storefront. Create a believable catalog with about eight pieces, product cards, product-detail views, glaze choices, a local cart, and an editorial section explaining the firing process. Use warm clay colors, restrained typography, natural light, and tactile close-up imagery.\\n\\nThe signature interaction should be a single 3D cup turning slowly on a pottery wheel in the hero or featured-product section. Users can drag to rotate it and choose glaze swatches that update its material immediately. During the making-process section, animate the same object from raw clay to glazed and fired ceramic as the user scrolls. Keep the rest of the commerce experience simple and familiar.\\n\\nGenerate original imagery if available. No backend or real payment flow is required. Make the experience responsive, add reduced-motion behavior, run build and lint, and verify product browsing, glaze selection, and cart behavior in the browser."
+        ]
+      },
+      {
+        "title": "Iteration 1",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nBuilt the eight-piece catalog, product views, persistent cart, original product imagery, and interactive WebGL cup with drag rotation and live glaze selection."
+        ]
+      },
+      {
+        "title": "Iteration 2",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nReworked the 3D object into a believable hollow mug with a thick rim, curved handle, clay foot, throwing-line relief, glaze speckles, and glaze-specific surface properties."
+        ]
+      },
+      {
+        "title": "Iteration 3",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nRemoved the firing-process section and its navigation so the catalog flows directly into the journal content."
+        ]
+      },
+      {
+        "title": "Iteration 4",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nRefined the mug with layered glaze detail, handmade asymmetry, a cleaner handle, studio reflections, stronger grounding, a detailed pottery wheel, and higher-resolution rendering."
+        ]
+      },
+      {
+        "title": "Final pass",
+        "prompts": [
+          "Complete the project with this final pass, verify the result, and preserve working behavior:\\n\\nFinished an elevated ceramics shop with a tactile eight-piece catalog, polished interactive mug, three live glazes, and a responsive persistent cart."
+        ]
+      }
+    ]
+  },
+  "material-lab": {
+    "sourceUrl": "https://developers.openai.com/showcase/material-lab",
+    "steps": [
+      {
+        "title": "Initial prompt",
+        "prompts": [
+          "Build “Material Lab,” a focused real-time 3D material-design tool that runs locally in the browser. Display an elegant sculptural object in a studio environment and let users switch among glass, metal, ceramic, and fabric presets. Provide clear controls for color, roughness, metallic level, translucency, pattern scale, light intensity, and environment.\\n\\nEvery control should update the object immediately. Let users orbit the camera, drag the key light around the object, switch between two or three studio environments, compare before and after, and save custom presets in local storage. The interface should look like a professional creative tool without becoming a dense technical shader editor.\\n\\nUse React Three Fiber or Three.js, keep interactions responsive, and provide sensible limits for every control. Run build and lint, then verify all material presets, sliders, lighting controls, and saved presets in the browser with no console errors."
+        ]
+      },
+      {
+        "title": "Iteration 1",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nBuilt the initial real-time studio with glass, metal, ceramic, and fabric materials, bounded controls, three environments, orbit controls, draggable lighting, and local presets."
+        ]
+      },
+      {
+        "title": "Iteration 2",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nRemoved the unclear before-and-after mode, rebuilt the key-light gesture as direct press-drag-release interaction, and added opaque glass plus independent ambient lighting."
+        ]
+      },
+      {
+        "title": "Iteration 3",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nCorrected metal, ceramic, and fabric rendering with material-specific physical properties, procedural woven detail, clean shader remounting, and context-aware controls."
+        ]
+      },
+      {
+        "title": "Iteration 4",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nAdded Loop, Knot, Orb, and Gem shapes while preserving material, lighting, camera, and preset behavior across every form."
+        ]
+      },
+      {
+        "title": "Final pass",
+        "prompts": [
+          "Complete the project with this final pass, verify the result, and preserve working behavior:\\n\\nFinished a responsive material playground with five surface presets, four sculptural forms, direct lighting controls, multiple environments, and locally saved configurations."
+        ]
+      }
+    ]
+  },
+  "nightjar": {
+    "sourceUrl": "https://developers.openai.com/showcase/nightjar-listening-room",
+    "steps": [
+      {
+        "title": "Build an interactive listening room",
+        "prompts": [
+          "Build a complete, polished, interactive landing page. Use clear, natural copy and a restrained layout with purposeful controls. Keep native scrolling, support phone and desktop layouts, keyboard controls, and reduced motion. The main interaction should work without a runtime AI call or account.\\n\\nScenario: Nightjar is an imagined listening room built around records, good speakers and comfortable seats. Visitors can preview the listening experience and explore the room. Demonstrate audiovisual craft and interface timing with a warm, tactile design.\\n\\nArt direction: tobacco wood, near-black, oxblood and amber light, with excellent photography or original room renders. Use an understated serif for the venue name and a clear compact sans for the listening controls. The page should feel like a specific room at night, not a streaming-service dashboard.\\n\\nPage and signature interaction:\\n- Hero: “A listening room for full albums.” A turntable, sleeve and speaker sit in an inviting room scene, with an obvious “Play a sample” button. Audio starts only from user action and always has visible pause/mute and volume controls.\\n- Offer three distinct original short instrumental samples/loops with accurately described styles and duration. Produce them procedurally with Web Audio or use properly licensed original assets. No copyrighted commercial recordings, fake artist credits, or claims that a short generated loop is an actual released album.\\n- Selecting a record changes the sleeve, label and sound. The tonearm lowers, platter rotates while playback runs, and subtle meter/room-light movement follows the actual audio amplitude. Pausing must stop the appropriate visual motion. The animation and playback state must stay synchronized.\\n- Scrolling reveals the room: a bench, a table near the speakers and the bar. Clicking one shows its view and a concise description. Keep the room layout consistent across hero and detail views.\\n- Include a compact authored listening programme with useful categories, and allow visitors to save a shortlist locally. Use fictional programming without presenting it as a real event booking.\\n- End with a clear room overview and “Replay the samples” or “View your shortlist.” A functioning preview is the destination; do not add fake ticketing.\\n\\nHandle browser audio unlocking, sample switching, rapid play/pause, a tab becoming hidden, and reduced-motion preferences. Never require a microphone. Provide a visual alternative for the audio story. Make the mobile player compact and reliable. The result should combine an excellent hospitality landing page with a genuinely working miniature listening experience.",
+          "Create an atmospheric interior image for the fictional listening room."
+        ]
+      },
+      {
+        "title": "Generate the listening-room interior",
+        "prompts": [
+          "Generate an editorial architectural image of a fictional listening room at night. Include walnut paneling, an oxblood leather bench and low round table, vintage walnut speakers, a turntable with an abstract record sleeve, amber lamps, and a small bar. Make the room feel intimate and grounded, with no people, text, or logos."
+        ]
+      }
+    ]
+  },
+  "paper-glider": {
+    "sourceUrl": "https://developers.openai.com/showcase/paper-glider",
+    "steps": [
+      {
+        "title": "Initial prompt",
+        "prompts": [
+          "Build “Paper Glider,” a simple in-browser 3D flying game. The player guides a paper airplane through a continuous sequence of beautifully designed rooms by moving the pointer or dragging on touch. Passing through floating rings increases the score; hitting furniture or walls ends the run. Keep movement forgiving and arcade-like rather than physically realistic.\\n\\nUse WebGL with a clean, low-poly art direction, warm afternoon light, and subtle paper textures. Animate curtains, dust, and loose pages to convey motion. Include a short start screen, score, best score stored locally, increasing speed, a game-over state, and one-click restart. Generate the rooms procedurally from a small set of reusable obstacles so the game needs no external level data.\\n\\nSupport desktop and mobile controls, maintain smooth performance, run build and lint, and verify starting, scoring, collisions, and restarting in the browser with no console errors."
+        ]
+      },
+      {
+        "title": "Iteration 1",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nBuilt a dependency-free WebGL game engine with procedural rooms, furniture, rings, dust, curtains, loose pages, cross-device steering, scoring, collisions, restart, and persistent best score."
+        ]
+      },
+      {
+        "title": "Iteration 2",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nAdded parquet, rugs, wall panels, molding, framed artwork, brass details, richer materials, layered lighting, shadows, color grading, and distance-based rendering limits for a more elevated presentation."
+        ]
+      },
+      {
+        "title": "Final pass",
+        "prompts": [
+          "Complete the project with this final pass, verify the result, and preserve working behavior:\\n\\nFinished a polished, responsive gliding game with procedural interiors, forgiving controls, an escalating arcade loop, and verified desktop and mobile play."
+        ]
+      }
+    ]
+  },
+  "pattern-studio": {
+    "sourceUrl": "https://developers.openai.com/showcase/pattern-studio",
+    "steps": [
+      {
+        "title": "Build the pattern editor",
+        "prompts": [
+          "Build a seamless pattern editor with an original vector motif library and a way to draw custom motifs. Let people move, rotate, resize, layer, and recolor shapes in an editable tile. Provide straight, half-drop, and mirrored repeats, plus previews on a cushion and wrapping paper. Keep the design editable and support undo and redo."
+        ]
+      },
+      {
+        "title": "Clarify shared and individual colors",
+        "prompts": [
+          "Make the side panel clearer. Explain which colors update the whole pattern and which apply only to the selected motif. Show when a motif uses a shared color, and make custom drawing feel like a clear way to create another reusable motif."
+        ]
+      },
+      {
+        "title": "Export a repeating pattern",
+        "prompts": [
+          "Add PNG and SVG exports that preserve the selected repeat layout, colors, and edge wrapping. Give the export options enough space to scan, and make it clear which file creates a seamless repeat."
+        ]
+      },
+      {
+        "title": "Make room for the canvas",
+        "prompts": [
+          "Keep the canvas visible and use toolbar buttons to open Motifs and Settings. Show the panels alongside it on larger screens and as closable overlays on mobile. Check that the canvas and export dialog remain comfortable to use at every screen size."
+        ]
+      },
+      {
+        "title": "Save and reopen pattern projects",
+        "prompts": [
+          "Clearly distinguish projects saved on this device from projects saved to an account. Add an optional Sign in with ChatGPT flow to save and reopen patterns, preserving motifs, colors, repeat settings, and layer order."
+        ]
+      }
+    ]
+  },
+  "stop-motion-desk": {
+    "sourceUrl": "https://developers.openai.com/showcase/stop-motion-desk",
+    "steps": [
+      {
+        "title": "Build the animation studio",
+        "prompts": [
+          "Build a browser-based stop-motion studio with original 3D characters and props. Let people arrange a scene, adjust a character’s pose, capture frames, preview the animation at different speeds, and export a GIF. Include frame reordering, duplication, deletion, and a clear preview of the previous pose. Keep the creative work on a single stage with a simple timeline below it."
+        ]
+      },
+      {
+        "title": "Create characters and props",
+        "prompts": [
+          "Make the 3D objects more expressive and visually interesting. Add a girl to the character collection and expand the props with plants, furniture, and small scene details. Give the characters distinct silhouettes, clothing, and pose controls that make simple gestures easy to animate."
+        ]
+      },
+      {
+        "title": "Export a short animation",
+        "prompts": [
+          "Create a short sample animation using the characters and props. Capture a sequence of distinct poses, adjust the timing, and export a looping GIF that matches the timeline preview."
+        ]
+      },
+      {
+        "title": "Adapt the workspace to every screen",
+        "prompts": [
+          "Make the side panels resizable without covering the stage on desktop. On mobile, use toggles to open a single overlay panel and switch between Objects and Settings. Keep the timeline and capture controls usable across screen sizes."
+        ]
+      },
+      {
+        "title": "Save projects on a device or account",
+        "prompts": [
+          "Keep automatic saving on this device and make that status clear. Add an optional Sign in with ChatGPT flow so people can save projects to their account and reopen them later. Preserve every frame, object, pose, and timing value."
+        ]
+      }
+    ]
+  },
+  "terrain-mixer": {
+    "sourceUrl": "https://developers.openai.com/showcase/terrain-mixer",
+    "steps": [
+      {
+        "title": "Initial prompt",
+        "prompts": [
+          "Build “Terrain Mixer,” a procedural landscape generator that runs entirely in the browser. Use a seed plus controls for elevation, roughness, erosion, water level, snow line, and vegetation density. Display a responsive 3D landscape together with a synchronized contour map and a movable cross-section profile.\\n\\nAll three views must update when a control changes. Add Randomize, Reset, a few visually distinct presets, and the ability to copy or save the current seed and settings locally. Animate transitions between terrain states instead of abruptly replacing the geometry. Use procedural noise and lightweight approximations; do not require external terrain data or an API.\\n\\nPrioritize an attractive creative-tool interface and smooth interaction over scientific realism. Run build and lint, then verify every control, preset, seed, and synchronized view in the browser with no console errors or major performance problems."
+        ]
+      },
+      {
+        "title": "Iteration 1",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nBuilt an animated React Three Fiber landscape with procedural elevation, water, snow, vegetation, orbit controls, and responsive rendering."
+        ]
+      },
+      {
+        "title": "Iteration 2",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nConnected the 3D terrain, contour map, and movable cross-section so all three views update from the same seed and settings."
+        ]
+      },
+      {
+        "title": "Iteration 3",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nAdded six bounded controls, distinct presets, Randomize, Reset, seed copying, autosave, explicit local persistence, and animated state transitions."
+        ]
+      },
+      {
+        "title": "Final pass",
+        "prompts": [
+          "Complete the project with this final pass, verify the result, and preserve working behavior:\\n\\nGenerated the complete Terrain Mixer in one pass, then verified every control, preset, seed, synchronized view, persistence flow, and responsive breakpoint."
+        ]
+      }
+    ]
+  },
+  "tidal-house": {
+    "sourceUrl": "https://developers.openai.com/showcase/tidal-house",
+    "steps": [
+      {
+        "title": "Build the coastal retreat",
+        "prompts": [
+          "Build a complete, polished, interactive landing page. Use clear, natural copy and a restrained layout with purposeful controls. Keep native scrolling, support phone and desktop layouts, keyboard controls, and reduced motion. The main interaction should work without a runtime AI call or account.\\n\\nScenario: Tidal House is an imagined small coastal retreat with three cabins around a sheltered inlet. The visitor is choosing the kind of stay and view they prefer. Show cinematic environmental design and a clear hospitality experience.\\n\\nArt direction: slate, pale sea-green, weathered timber and clean ivory. Wide photographs/rendered landscapes, a restrained editorial serif paired with very legible labels, generous breathing room and gentle scene depth. It should feel quiet and specific to a coast.\\n\\nPage and signature interaction:\\n- Hero: “Cabins beside the water.” Show the inlet and three distinct cabins in one coherent landscape. “Explore the cabins” advances to the interactive scene.\\n- A pinned landscape/cutaway scene lets the visitor choose a cabin. Selecting it moves the camera closer, lifts or fades the roof to reveal its small floor plan, and shows the matching interior and window view. All views must describe the same architecture and orientation.\\n- A simple morning/evening control changes light and interior window illumination. A low/high-tide preview changes the shoreline and exposed path while preserving the site geometry. These are authored previews, not live tide forecasts. Do not publish a tide schedule or safety recommendation.\\n- Give each cabin a concrete difference, such as a covered deck, a bathtub facing the inlet, or a reading nook. Compare those differences in one useful, compact comparison instead of repeating three identical cards.\\n- Include a short photographic section about the rooms and shared spaces, with restrained parallax that preserves image readability.\\n- Finish with “Save a stay plan”: visitors choose a cabin and a few stay preferences and get a downloadable summary with the selected view. Use direct wording that does not imply an actual reservation or message was sent. Do not add payment or a fake availability calendar.\\n\\nBuild the landscape and cabin geometry with spatial consistency; high-quality still assets are suitable for rich interiors, paired with a real interactive exterior/cutaway. Keep camera transitions bounded and comfortable. On mobile preserve cabin selection and useful views without requiring a drag gesture to scroll. Verify every cabin, time/tide combination, and return to the overview. Let the setting and useful exploration carry the page.",
+          "Create a coastal scene that gives each cabin a distinct character."
+        ]
+      },
+      {
+        "title": "Generate the cabin landscape",
+        "prompts": [
+          "Generate a wide editorial landscape of a quiet sheltered inlet with exactly three small weathered-timber cabins along the far bank. Give them charcoal pitched roofs and front windows facing the water and camera. The left cabin has a covered deck, the middle cabin shows a bathtub through its window, and the right cabin has a reading nook. Use a rocky shore, pale sea-green grasses, calm slate water, low distant hills, and soft morning light. Keep the cabins separate and readable, with no people, text, logos, boats, or extra buildings."
+        ]
+      },
+      {
+        "title": "Refine the hospitality copy",
+        "prompts": [
+          "Rewrite the copy in clear, natural language that explains the cabins and helps visitors choose a stay. Keep the existing interface, layout, and visuals unchanged.",
+          "Give each section a clear purpose and remove redundant wording."
+        ]
+      },
+      {
+        "title": "Clarify the content hierarchy",
+        "prompts": [
+          "Keep the presentation restrained, with a clear purpose for each section and useful headings. Remove redundant wording while preserving the existing interface, layout, and visuals.",
+          "Give the retreat one clear title and a short tagline."
+        ]
+      },
+      {
+        "title": "Give the hero a clearer title and tagline",
+        "prompts": [
+          "Give the hero one clear title and a short tagline that explain the coastal cabin retreat. Remove redundant captions and preserve the existing visuals and layout."
+        ]
+      }
+    ]
+  },
+  "tiny-rails": {
+    "sourceUrl": "https://developers.openai.com/showcase/tiny-rails-rollercoaster",
+    "steps": [
+      {
+        "title": "Initial prompt",
+        "prompts": [
+          "Use set_goal and multiple agents to build and deploy a cute roller-coaster game on Sites. Use ImageGen for assets and create a heartwarming, nostalgic environment that feels miniature but highly detailed. Keep iterating until it is polished, deployed, and playable."
+        ]
+      },
+      {
+        "title": "Iteration 1",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nEstablished the nostalgic miniature visual direction with ImageGen."
+        ]
+      },
+      {
+        "title": "Iteration 2",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nBuilt the core experience in Three.js: a looping track, train, cameras, controls, and animation."
+        ]
+      },
+      {
+        "title": "Iteration 3",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nRefined track geometry, banking, acceleration, braking, leaning, guardrails, and recovery behavior."
+        ]
+      },
+      {
+        "title": "Iteration 4",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nPolished terrain, foliage, props, lighting, fog, textures, animation, and performance."
+        ]
+      },
+      {
+        "title": "Iteration 5",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nShifted the experience into a simulator game with assisted, coached, limit-pushing, and Unhinged modes."
+        ]
+      },
+      {
+        "title": "Iteration 6",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nSimplified the HUD and onboarding while improving warnings and physical feedback."
+        ]
+      },
+      {
+        "title": "Iteration 7",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nAdded three separate two-way junctions, creating eight possible route combinations."
+        ]
+      },
+      {
+        "title": "Iteration 8",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nRan full-loop, responsive, persistence, physics, and visual QA before deploying each major refinement."
+        ]
+      },
+      {
+        "title": "Iteration 9",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nRepeated the same improvement loop throughout: inspect the live build, research the issue, set a concrete refinement goal, use subagents for critique, implement, test, deploy, and repeat."
+        ]
+      },
+      {
+        "title": "Final pass",
+        "prompts": [
+          "Complete the project with this final pass, verify the result, and preserve working behavior:\\n\\nCompleted full-loop, responsive, persistence, physics, and visual QA, then deployed the refined miniature coaster experience."
+        ]
+      }
+    ]
+  },
+  "type-field": {
+    "sourceUrl": "https://developers.openai.com/showcase/type-field",
+    "steps": [
+      {
+        "title": "Build a variable-type exhibition",
+        "prompts": [
+          "Build a complete, polished, interactive landing page. Use clear, natural copy and a restrained layout with purposeful controls. Keep native scrolling, support phone and desktop layouts, keyboard controls, and reduced motion. The main interaction should work without a runtime AI call or account.\\n\\nScenario: Type Field is a small online exhibition where visitors explore how variable typography works and make a poster from the same type system. This should demonstrate excellent typographic hierarchy, responsive composition and direct manipulation without depending on photography.\\n\\nArt direction: vivid orange, warm white and black, very large letterforms, precise rules, asymmetrical Swiss-inspired composition. Use a distinctive grid that changes convincingly across breakpoints. Font specimens are the visual material. The page must still read clearly.\\n\\nPage and signature interaction:\\n- Hero: “An exhibition of variable type.” A large, editable specimen occupies the page; drag a clear weight/width control to see its real letterforms change, with the current font-axis values visible only where useful.\\n- Use an actually licensed open-source variable font with verified supported axes. Credit the font accurately and retain its license. Do not claim to have designed an existing font, fabricate unsupported variable axes, or simulate width by merely stretching every glyph.\\n- Scrolling transforms the same specimen through three useful compositions: a compact headline, an editorial paragraph, and a large poster. Preserve readable text and show actual optical/spacing changes when supported.\\n- A “Make a poster” section lets visitors edit a short title, choose among three authored grid layouts, adjust supported axes, and switch between a small set of carefully selected palettes. The result should always remain composed, including long words and punctuation.\\n- Include an optional clear overlay for the baseline/grid so users can inspect alignment and switch it off. Explain type controls in short practical sentences.\\n- “Download poster” must produce a real, high-quality SVG or PNG with fonts handled correctly; also offer reset. Keep poster creation in the page rather than opening a complex design app.\\n\\nMake the interactions tactile through timing and layout, not random flying letters. Avoid audio and unnecessary 3D. Use semantic HTML for the exhibition, with canvas/SVG only where needed for the export or specimen. Check long/empty inputs, glyph coverage, font loading, export fidelity, keyboard controls, reduced motion and mobile composition. This should be a complete, confident typography site that would be compelling even as a still image."
+        ]
+      }
+    ]
+  },
+  "verdant-market": {
+    "sourceUrl": "https://developers.openai.com/showcase/verdant-market",
+    "steps": [
+      {
+        "title": "Initial prompt",
+        "prompts": [
+          "Build a complete modern grocery storefront with more than 100 products across standard departments, including conventional and organic baking ingredients. Include home, product, cart, and checkout flows, realistic imagery, and WebMCP tools for browsing departments, searching and inspecting products, and managing the cart. Build and host it with Sites, and test the browser flows and WebMCP tools."
+        ]
+      },
+      {
+        "title": "Iteration 1",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nBuilt the storefront with 110 products in 10 departments, product pages, a cart, and a checkout flow."
+        ]
+      },
+      {
+        "title": "Iteration 2",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nRefined the layout and information density, added product photography, and fixed navigation with browser history."
+        ]
+      },
+      {
+        "title": "Iteration 3",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nAdded and refined the WebMCP tools, including visible tool-activity feedback."
+        ]
+      },
+      {
+        "title": "Iteration 4",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nRemoved recipe-specific helpers and navigation-only tools and improved checkout guidance."
+        ]
+      },
+      {
+        "title": "Iteration 5",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nFixed empty tool input schemas on the deployed site and verified them after a fresh reload."
+        ]
+      },
+      {
+        "title": "Iteration 6",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nRemoved the recipe-kit interface and its hidden state to focus on general grocery shopping."
+        ]
+      }
+    ]
+  },
+  "minitown": {
+    "sourceUrl": "https://developers.openai.com/showcase/minitown",
+    "steps": [
+      {
+        "title": "Initial prompt",
+        "prompts": [
+          "Create MiniTown, a retro-inspired, pixel-art-flavored city simulation that plays more like a cozy god game than a traditional management game.\\n\\nStart on an empty piece of land. The player should be able to place Residential, Shop, and Workspace zones, then watch roads appear automatically around them. Buildings should move through visible construction stages, become inhabited, and grow over time as the town comes alive.\\n\\nThe main pleasure of the game is observation. Simulated residents should have homes, workplaces, shops, schedules, and destinations. Show people walking and cars moving through town, and let the player hover over a house, shop, or workplace to see who is there and what is happening.\\n\\nSupport connected blocks of one, two, or three buildings by clicking and dragging. Everything placed during one drag should become one shared building block: roads form around its exterior, with no roads between the buildings inside it.\\n\\nAdd a visible day/night cycle so the town changes as time passes. At night, shift the environment toward soft cool colors while windows, streetlights, and occupied buildings emit warm, diffuse light. Keep the result readable, pretty, and cozy.\\n\\nUse a slightly top-down camera suited to watching the whole town. Keep interaction light and observational: move the camera, explore freely, inspect buildings and residents, choose where zones should go, then watch the simulation unfold. Include a free Explore mode where the mouse is not placing anything.\\n\\nBefore building the game, use `$imagegen` to create several gameplay concepts and town states. Keep the visual direction technically achievable with simple stylized 3D models and generated art, with enough variation in buildings, people, and vehicles that the town does not feel repetitive."
+        ]
+      },
+      {
+        "title": "Iteration 1",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nUsed ImageGen to establish several technically achievable gameplay states, including the empty land, a growing town, and the cozy nighttime direction."
+        ]
+      },
+      {
+        "title": "Iteration 2",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nDefined the zoning, automatic road generation, construction, building growth, agent simulation, inspection, and camera systems, then built the first playable vertical slice."
+        ]
+      },
+      {
+        "title": "Iteration 3",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nExpanded the play area and added more varied buildings, residents, and vehicles, moving the people and cars toward a cohesive stylized 3D look."
+        ]
+      },
+      {
+        "title": "Iteration 4",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nAdded visible time progression, a day/night cycle, glowing windows and streetlights, and a free Explore mode for moving around without building."
+        ]
+      },
+      {
+        "title": "Iteration 5",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nReworked drag zoning so one, two, or three connected plots form a single shared block, with continuous land inside and roads only around the outer perimeter. Refined the lighting toward the softer, more diffuse concept-art mood."
+        ]
+      },
+      {
+        "title": "Final pass",
+        "prompts": [
+          "Complete the project with this final pass, verify the result, and preserve working behavior:\\n\\nCompleted the connected-block zoning and soft-lighting pass, then published the public MiniTown build through Sites."
+        ]
+      }
+    ]
+  },
+  "phantasy-codex-adventure": {
+    "sourceUrl": "https://developers.openai.com/showcase/phantasy-codex-adventure",
+    "steps": [
+      {
+        "title": "Initial prompt",
+        "prompts": [
+          "Build Phantasy Codex Adventure, a compact top-down action RPG inspired by Game Boy Color games such as Final Fantasy Adventure and Sword of Mana.\\n\\nThe player should explore a procedurally generated world, move with the keyboard, and attack using a sword, spear, or wand. Monsters should continuously populate the world, with both passive creatures that retaliate when attacked and aggressive enemies that engage automatically.\\n\\nAdd health, stamina, and XP progression; playful damage and reward feedback; level-up choices; weapon improvements; and a character sheet showing the current build and stats.\\n\\nUse a colorful 2D retro style with modern polish and satisfying reward presentation. Generate the necessary player, monster, weapon, environment, and UI artwork with image generation.\\n\\nAdd a shared leaderboard through ChatGPT Sites. When a run ends, publish the player's level and total XP.\\n\\nSet an ongoing goal from these requirements, make creative decisions where needed, and iterate until the game is polished, validated, and ready to publish."
+        ]
+      },
+      {
+        "title": "Iteration 1",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nBuilt the first playable version with procedural exploration, three weapons, passive and aggressive monsters, stamina-driven combat, XP, level-up rewards, a character sheet, and a leaderboard."
+        ]
+      },
+      {
+        "title": "Iteration 2",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nExpanded the original goal into a recursive game-director goal after initial playtesting, then refined combat responsiveness, directional animations, targeting, sound, difficulty, tooltips, and the retro interface using the supplied concept art as the visual target."
+        ]
+      },
+      {
+        "title": "Iteration 3",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nReworked the endless field into an eight-biome Journey with distinct environments, enemies, bosses, landmarks, secrets, automatic objectives, and the Lumenrest midpoint town."
+        ]
+      },
+      {
+        "title": "Iteration 4",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nAdded three playable classes, Relics, Resonance, weapon Mastery and Temper, optional contracts, the Codex Gauntlet, and a standalone endless Survival mode."
+        ]
+      },
+      {
+        "title": "Iteration 5",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nPolished the full experience through repeated desktop and phone playtesting, adding mobile touch controls, controller support, performance improvements, clearer notifications, identity-safe leaderboards, repaired sprite atlases, and an adaptive soundtrack."
+        ]
+      },
+      {
+        "title": "Final pass",
+        "prompts": [
+          "Complete the project with this final pass, verify the result, and preserve working behavior:\\n\\nCompleted repeated desktop and mobile playtesting, then published the expanded Journey and Survival experience with persistent progress and shared rankings."
+        ]
+      }
+    ]
+  },
+  "ridge-pack": {
+    "sourceUrl": "https://developers.openai.com/showcase/ridge-pack",
+    "steps": [
+      {
+        "title": "Build a pack and a working packing guide",
+        "prompts": [
+          "Build a complete, polished, interactive landing page. Use clear, natural copy and a restrained layout with purposeful controls. Keep native scrolling, support phone and desktop layouts, keyboard controls, and reduced motion. The main interaction should work without a runtime AI call or account.\\n\\nScenario: Ridge is an imagined outdoor equipment brand launching a compact day pack. Visitors want to understand its pockets, capacity and how their everyday trail items fit. This demo should combine a strong outdoor campaign with useful spatial interaction.\\n\\nArt direction: chalk white, mountain blue, burnt orange and graphite, rugged close-up fabric details, bold condensed headings and precise practical labels. Mix a single excellent landscape campaign image with large clean product renders. Avoid beige luxury styling or a generic ecommerce grid.\\n\\nHero: “One pack for a day on the trail.” Show the pack prominently with a “Try the packing guide” action. The signature object is a coherent 3D pack with two authored capacity options and a few finishes. Scrolling opens the top and reveals the compartments in an exploded/cutaway view; product seams, straps, lining and pockets should correspond between all views.\\n\\nBuild an interactive packing guide with six to eight predefined objects such as a bottle, rolled jacket, notebook, camera cube and lunch box. Visitors add or drag items into appropriate compartments; the scene shows where each one goes, how much space remains and what will not fit under the guide's clearly defined dimensions. Base capacity/fit feedback on the same item dimensions and compartment model used by the visualization. Do not animate everything into a bag regardless of constraints. Provide tap-to-add controls, remove/undo and reset.\\n\\nChanging the pack size should preserve what still fits and explain which item needs to be removed or repositioned. Keep the physics/packing solver bounded and predictable; a carefully designed geometric fit model is sufficient. Document the model's simplifications in the README. Do not imply the guide is a hiking-safety checklist.\\n\\nFollow with concise practical sections about access, compartments and construction, then a saved packing summary with a real downloadable image/list. There is no checkout. Include a short “Inside the pack” view with meaningful labels instead of a wall of feature badges.\\n\\nTest every item combination near capacity, size changes, undo/reset, model rotation, reduced motion and mobile input. The backpack must look well made, and the packing guide must be understandable without instructions longer than a sentence."
+        ]
+      },
+      {
+        "title": "Generate the campaign landscape",
+        "prompts": [
+          "Generate a wide cinematic alpine landscape for an outdoor campaign. Show a rugged blue-gray limestone ridgeline, distant misty peaks, and a small trail through golden grasses in late-afternoon directional sunlight. Keep the scene quiet and adventurous, with no text, logos, watermarks, or gear close-ups."
+        ]
+      }
+    ]
+  },
+  "scent-cartography": {
+    "sourceUrl": "https://developers.openai.com/showcase/scent-cartography",
+    "steps": [
+      {
+        "title": "Initial prompt",
+        "prompts": [
+          "Build “Scent Cartography,” a premium but approachable fragrance storefront. Include a strong editorial hero, a catalog of six fictional fragrances, product details, a local cart drawer, and a simple build-your-own-scent experience. Use a dark botanical palette, luminous particles, fine typography, and macro ingredient imagery. Generate coherent original product imagery if image generation is available.\\n\\nThe signature interaction is a constellation of fragrance notes. Let users choose one top, heart, and base note; each selection should alter the constellation, particle plume, color atmosphere, and bottle label in real time. The resulting scent can be added to the cart alongside the standard products. Keep the interaction legible and avoid turning it into a complicated chemistry simulator.\\n\\nNo backend or real checkout is required, but browsing, configuration, cart quantities, and removal must work. Make it responsive, respect reduced motion, run build and lint, and verify the complete shopping flow in the browser with no console errors."
+        ]
+      },
+      {
+        "title": "Iteration 1",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nBuilt the six-fragrance catalog, product details, persistent cart, and live top-heart-base configurator with changing atmosphere, particles, geometry, copy, and bottle labels."
+        ]
+      },
+      {
+        "title": "Iteration 2",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nReworked the dark, space-like direction into an ivory and sage luxury system with warm floral photography, limestone textures, botanical imagery, and corrected petal placement."
+        ]
+      },
+      {
+        "title": "Iteration 3",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nConnected leaves to the stem with visible petioles and veins, repositioned foliage around the petals, and replaced the radial root with a more natural botanical structure."
+        ]
+      },
+      {
+        "title": "Iteration 4",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nJoined every leaf structurally to its bloom, removed the root artwork and the redundant return link, and rebalanced the final editorial section."
+        ]
+      },
+      {
+        "title": "Final pass",
+        "prompts": [
+          "Complete the project with this final pass, verify the result, and preserve working behavior:\\n\\nFinished a responsive botanical storefront with six fragrances, an elegant custom-scent atelier, coherent original imagery, and a complete local cart flow."
+        ]
+      }
+    ]
+  },
+  "paperie": {
+    "sourceUrl": "https://developers.openai.com/showcase/paperie",
+    "steps": [
+      {
+        "title": "Initial prompt",
+        "prompts": [
+          "Build a WebMCP greeting-card demo where a user's agent brings its own recipient context and image-generation capabilities. Make the site a canvas for different card sizes with a buy and print control."
+        ]
+      },
+      {
+        "title": "Iteration 1",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nEnabled tools to edit card fields directly."
+        ]
+      },
+      {
+        "title": "Iteration 2",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nAdded a clear Create your own starting point and an empty state explaining how an agent can help."
+        ]
+      },
+      {
+        "title": "Iteration 3",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nAdded an envelope preview and removed the Details section."
+        ]
+      },
+      {
+        "title": "Iteration 4",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nAdded text-length and fitting controls and an editable small cover label."
+        ]
+      },
+      {
+        "title": "Iteration 5",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nExplored birthday and humorous new-baby messages through agent-driven card editing."
+        ]
+      }
+    ]
+  },
+  "waveform-studio": {
+    "sourceUrl": "https://developers.openai.com/showcase/waveform-studio",
+    "steps": [
+      {
+        "title": "Initial prompt",
+        "prompts": [
+          "Build “Waveform Studio,” a polished browser-based audio waveform visualizer and visual-design tool. Include three bundled sounds with distinct character—a short drum loop, an ambient chord, and a clean melodic sample—with play, pause, seek, and volume controls. Let users import a common audio file, decode and analyze it entirely in the browser, and never upload it anywhere.\\n\\nRender the waveform with Canvas or WebGL and update it during playback. Give users visual controls for line thickness, amplitude, smoothing, zoom, mirrored versus single-sided layout, linear versus radial layout, foreground gradient, background color, glow, and playback-head style. Provide strong presets and let users save settings locally. The interface should feel like a focused design app, not an audio workstation.\\n\\nHandle unsupported or oversized files gracefully. Make controls responsive and keyboard accessible, run build and lint, and verify all three samples, local import, seeking, visualization modes, and saved presets in the browser with no console errors."
+        ]
+      },
+      {
+        "title": "Iteration 1",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nBuilt the local audio engine with three generated samples, private file import, transport controls, configurable Canvas waveforms, built-in presets, and locally saved settings."
+        ]
+      },
+      {
+        "title": "Iteration 2",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nKept the full-file waveform static while configuring, switched to live analyzer data during playback, refined playback heads, and added export as a self-contained React component."
+        ]
+      },
+      {
+        "title": "Iteration 3",
+        "prompts": [
+          "Implement this next project iteration while preserving the parts of the existing experience that still work:\\n\\nSmoothed live motion with local amplitude envelopes, spatial filtering, temporal attack-and-release damping, and independently stabilized glow intensity in both the app and exported component."
+        ]
+      },
+      {
+        "title": "Final pass",
+        "prompts": [
+          "Complete the project with this final pass, verify the result, and preserve working behavior:\\n\\nFinished a responsive local-first waveform designer with smooth audio-driven animation, linear and radial layouts, saved presets, private imports, and reusable React export."
+        ]
+      }
+    ]
+  }
+}

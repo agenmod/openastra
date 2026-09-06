@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# openAstra
 
-## Getting Started
+玩别人做好的 Astra 游戏，也能用一句话做一局自己的。
 
-First, run the development server:
+站点：[openastra.cc](https://openastra.cc)  
+仓库：<https://github.com/agenmod/openastra>
+
+这不是 OpenAI 官方站。广场收集能在浏览器打开的游戏和 3D：官方、评测、社区，加上你在本站做的一局。点卡片进详情——小窗玩、看作者、抄已公开的制作步骤。社区作品不保证都是 GPT-6 Astra。
+
+## 怎么跑
+
+需要 Node 20+。
 
 ```bash
+cp .env.example .env
+# 填 AUTH_SECRET；要「做一局」再填 ANTHROPIC_API_KEY
+npm install
+npx prisma db push
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+打开 [http://localhost:3000](http://localhost:3000)。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+演示账号（本地种子数据）：`orbit@openastra.cc` / `demo1234`。
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+`.env`、本地 SQLite 和用户封面不会进仓库。
 
-## Learn More
+## 本仓是什么
 
-To learn more about Next.js, take a look at the following resources:
+- 站点代码：MIT
+- 本仓文案：可以自由引用
+- 游戏版权归原作者。本站只做介绍和外链，不搬运游戏本体
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 品牌
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+对外写 **openAstra**。域名、仓库、cookie 用全小写 **openastra**。

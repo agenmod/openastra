@@ -1,0 +1,71 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model User {
+  id            String        @id @default(cuid())
+  email         String        @unique
+  username      String        @unique
+  passwordHash  String
+  displayName   String
+  createdAt     DateTime      @default(now())
+  games         Game[]
+  comments      Comment[]
+  likes         Like[]
+  workComments  WorkComment[]
+}
+
+model Game {
+  id           String    @id @default(cuid())
+  slug         String    @unique
+  title        String
+  prompt       String
+  html         String
+  conversation String    @default("[]")
+  cover        String    @default("")
+  published    Boolean   @default(false)
+  playCount    Int       @default(0)
+  likeCount    Int       @default(0)
+  authorId     String
+  author       User      @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  comments     Comment[]
+  likes        Like[]
+}
+
+model Comment {
+  id        String   @id @default(cuid())
+  content   String
+  gameId    String
+  game      Game     @relation(fields: [gameId], references: [id], onDelete: Cascade)
+  authorId  String
+  author    User     @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+}
+
+model Like {
+  id        String   @id @default(cuid())
+  gameId    String
+  userId    String
+  game      Game     @relation(fields: [gameId], references: [id], onDelete: Cascade)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+
+  @@unique([gameId, userId])
+}
+
+model WorkComment {
+  id        String   @id @default(cuid())
+  workId    String
+  content   String
+  authorId  String
+  author    User     @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+
+  @@index([workId])
+}

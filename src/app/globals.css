@@ -1,26 +1,90 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --void: #07070c;
+  --panel: #101018;
+  --line: #26263a;
+  --ink: #f4f1ff;
+  --mute: #9a96b5;
+  --nova: #7c5cff;
+  --plasma: #ff4d9a;
+  --ion: #3ee6c3;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-void: var(--void);
+  --color-panel: var(--panel);
+  --color-line: var(--line);
+  --color-ink: var(--ink);
+  --color-mute: var(--mute);
+  --color-nova: var(--nova);
+  --color-plasma: var(--plasma);
+  --color-ion: var(--ion);
+  --font-sans: var(--font-outfit);
+  --font-display: var(--font-syne);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  min-height: 100%;
+  background: var(--void);
+  color: var(--ink);
+  color-scheme: dark;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-outfit), system-ui, sans-serif;
+  background-image:
+    radial-gradient(1200px 600px at 10% -10%, rgba(124, 92, 255, 0.18), transparent 55%),
+    radial-gradient(900px 500px at 90% 0%, rgba(255, 77, 154, 0.12), transparent 50%),
+    linear-gradient(#07070c, #07070c);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2d2d44 transparent;
+}
+
+@layer base {
+  a {
+    color: inherit;
+  }
+
+  input,
+  textarea,
+  button {
+    font: inherit;
+  }
+
+  button {
+    cursor: pointer;
+  }
+}
+
+/* 必须放在 layer 外：未分层的 `a { color: inherit }` 会盖掉 utilities 里的 text-void */
+.btn-solid {
+  background: var(--ink);
+  color: var(--void);
+}
+
+.btn-solid:hover {
+  background: #fff;
+}
+
+.btn-solid:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-text-fill-color: var(--ink);
+  caret-color: var(--ink);
+  box-shadow: 0 0 0 1000px var(--panel) inset;
+  transition: background-color 9999s ease-out 0s;
+}
+
+.display {
+  font-family: var(--font-syne), var(--font-outfit), sans-serif;
 }
